@@ -617,7 +617,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <img class="profile-image" src="logo.jpg" alt="">
-            <h1 data-en="Sengphet PhommaChan">ແສງເພັດ ພົມມະຈັນ</h1>
+            <h1 data-en="Sengphet PHOMMACHAN">ແສງເພັດ ພົມມະຈັນ</h1>
             <h2 data-en="Full-Stack Developer">Full-Stack Developer</h2>
             <div class="tech-tags">
                 <span class="tag">PHP</span>
@@ -984,6 +984,90 @@
         const languageIcon = document.getElementById('languageIcon');
         let currentLanguage = 'lo'; // Default to Lao
 
+        // Lao translations object
+        const laoTranslations = {
+            'Home': 'ໜ້າຫຼັກ',
+            'About': 'ກ່ຽວກັບ',
+            'Skills': 'ທັກສະ',
+            'Projects': 'ໂປຣເຈັກ',
+            'Experience': 'ປະສົບການ',
+            'Contact': 'ຕິດຕໍ່',
+            'Sengphet PHOMMACHAN': 'ແສງເພັດ ພົມມະຈັນ',
+            'Full-Stack Developer': 'Full-Stack Developer',
+            'Contact Me': 'ຕິດຕໍ່ຂ້ອຍ',
+            'View Projects': 'ເບິ່ງໂປຣເຈັກ',
+            'Download Resume': 'ດາວໂຫຼດ Resume',
+            'About Me': 'ກ່ຽວກັບຂ້ອຍ',
+            'Summary': 'ສະຫຼຸບຄວາມສາມາດ',
+            'I am a creative web developer with full-stack development capabilities. I have expertise in using PHP, MySQL, HTML, CSS, JavaScript, and React to create modern systems and website designs. I am passionate about providing innovative solutions and continuously learning new technologies.': 'ຂ້ອຍເປັນນັກພັດທະນາເວັບໄຊທີ່ມີຄວາມຄິດສ້າງສັນ ແລະມີຄວາມສາມາດພື້ນຖານໃນການພັດທະນາເວັບໄຊເຕັມຮູບແບບ (Full-Stack). ມີຄວາມຊ່ຽວຊານໃນການໃຊ້ PHP, MySQL, HTML, CSS, JavaScript ແລະ React ເພື່ອສ້າງລະບົບ ແລະອອກແບບໜ້າເວັບທີ່ທັນສະໄໝ. ມີຄວາມກະຕືລືລົ້ນທີ່ຈະສະໜອງວິທີແກ້ໄຂໃຫມ່ໆ ແລະຮຽນຮູ້ເທັກໂນໂລຊີໃໝ່ຢ່າງຕໍ່ເນື່ອງ.',
+            'Personal Information': 'ຂໍ້ມູນສ່ວນຕົວ',
+            'Date of Birth': 'ວັນເກີດ',
+            'Nationality': 'ສັນຊາດ',
+            'Hometown': 'ບ້ານເກີດ',
+            'Languages': 'ພາສາ',
+            'Technical Skills': 'ທັກສະດ້ານວິຊາການ',
+            'Development Projects': 'ໂຄງການພັດທະນາ',
+            'Online Job Search System': 'ລະບົບຫາວຽກອອນລາຍ',
+            'Full-Stack Web Development': 'Full-Stack Web Development',
+            'A full-featured web system for connecting employers with job seekers, featuring search, job application, and profile management.': 'ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບເຊື່ອມຕໍ່ຜູ້ປະກອບການກັບຜູ້ສະໝັກວຽກ ມີການຄົ້ນຫາ, ສະໝັກວຽກ, ແລະຈັດການໂປຣໄຟລ໌',
+            'Login/Registration System': 'ລະບົບລ໋ອກອິນ/ລົງທະບຽນ',
+            'Job Search': 'ການຄົ້ນຫາວຽກ',
+            'Profile Management': 'ຈັດການໂປຣໄຟລ໌',
+            'Job Application System': 'ລະບົບສະໝັກວຽກ',
+            'Full-Stack Development': 'Full-Stack Development',
+            'Online shopping website with product catalog, order management, and payment system.': 'ເວັບໄຊຊື້-ຂາຍອອນລາຍ ມີລະບົບຕະກ້າສິນຄ້າ, ການຈັດການຄຳສັ່ງຊື້, ແລະລະບົບຊຳລະເງິນ',
+            'Payment System': 'ລະບົບຊຳລະເງິນ',
+            'Product Tracking': 'ຕິດຕາມສິນຄ້າ',
+            'Product Management System': 'ລະບົບຄວບຄຸມສິນຄ້າ',
+            'Task Management App': 'Task Management App',
+            'Mobile Development': 'Mobile Development',
+            'Task management application with notifications, progress tracking, and team collaboration.': 'ແອັບພລິເຄຊັນຈັດການວຽກງານ ມີການແຈ້ງເຕືອນ, ຕິດຕາມຄວາມຄືບໜ້າ, ແລະການທຳງານເປັນທີມ',
+            'Time-based Notifications': 'ແຈ້ງເຕືອນລະຍະເວລາ',
+            'Team Collaboration': 'ຮ່ວມມືກັນທຳງານ',
+            'Progress Reports': 'ລາຍງານຄວາມຄືບໜ້າ',
+            'Work Calendar': 'ປະຕິທິນວຽກ',
+            'Restaurant POS System': 'Restaurant POS System',
+            'Desktop Application': 'Desktop Application',
+            'Point of sale system for restaurants with bill calculation, product management, and sales reporting.': 'ລະບົບຂາຍໜ້າຮ້ານສຳລັບຮ້ານອາຫານ ມີການຄຳນວນບິນ, ຈັດການສິນຄ້າ, ແລະລາຍງານຍອດຂາຍ',
+            'Point of Sale System': 'ລະບົບຂາຍໜ້າຮ້ານ',
+            'Automatic Bill Calculation': 'ຄຳນວນບິນອັດຕະໂນມັດ',
+            'Sales Reports': 'ລາຍງານຍອດຂາຍ',
+            'Stock Management': 'ຈັດການສະຕ໋ອກ',
+            'School Management System': 'School Management System',
+            'Web Application': 'Web Application',
+            'School management system with grade recording, attendance, and teacher-student communication.': 'ລະບົບຈັດການໂຮງຮຽນ ມີການບັນທຶກຄະແນນ, ການເຂົ້າຮຽນ, ແລະການສື່ສານລະຫວ່າງຄູ-ນັກຮຽນ',
+            'Grade Recording': 'ບັນທຶກຄະແນນ',
+            'Attendance System': 'ລະບົບເຂົ້າຮຽນ',
+            'Class Schedule': 'ຕາຕະລາງຮຽນ',
+            'Academic Reports': 'ລາຍງານຜົນການຮຽນ',
+            'Weather Forecast App': 'Weather Forecast App',
+            'Weather application connected to API displaying daily weather information.': 'ແອັບພລິເຄຊັນພະຍາກອນອາກາດ ເຊື່ອມຕໍ່ກັບ API ສະແດງຂໍ້ມູນອາກາດປະຈຳວັນ',
+            '7-Day Forecast': 'ພະຍາກອນ 7 ວັນ',
+            'Weather Alerts': 'ແຈ້ງເຕືອນສະພາບອາກາດ',
+            'Current Location': 'ຕຳແໜ່ງປັດຈຸບັນ',
+            'Beautiful UI': 'UI ສວຍງາມ',
+            'Experience & Education': 'ປະສົບການ & ການສຶກສາ',
+            'Work Experience': 'ປະສົບການການເຮັດວຽກ',
+            'Internship at: Lao Telecom Phongsaly Branch': 'ຝຶກງານທີ່: ລາວໂທລະຄົມສາຂາແຂວງຜົ້ງສາລີ (Lao Telecom)',
+            'February - April 2025': 'ກຸມພາ - ເມສາ 2025',
+            'Fixed telephone-Internet and mobile transmission': 'ໂທລະສັບພື້ນຖານ-ອິນເຕີເນັດ ແລະ ສາຍສົ່ງມືຖື',
+            'Configure routers for internet connection and WiFi installation': 'ຕັ້ງຄ່າເຣົາເຕີເພື່ອຮອງຮັບການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລະ ຕິດຕັ້ງ WiFi',
+            'Install signal towers and connect fiber optic cables': 'ຕິດຕັ້ງເສົາສັນຍານ ແລະ ຕໍ່ສາຍໄຟເບີອ໋ອບຕິກ',
+            'Troubleshoot network issues and customer support': 'ແກ້ໄຂບັນຫາເຄືອຂ່າຍ ແລະ ສະໜັບສະໜູນລູກຄ້າ',
+            'Education': 'ການສຶກສາ',
+            'Sudhaka Institute of Technology': 'ສະຖາບັນເຕັກໂນໂລຊີສຸດສະກະ',
+            "Bachelor's Degree: Computer Programming": 'ປະລິນຍາຕີ: ການສ້າງໂປຣແກຣມຄອມພິວເຕີ',
+            '2025-Present': '2025-ປັດຈຸບັນ',
+            'BCIT College': 'ວິທະຍາໄລບີຊີທີ',
+            'High School: Computer Science and Software Engineering': 'ຊັ້ນສູງ: ວິທະຍາສາດຄອມພິວເຕີ ແລະ ວິສະວະກຳຊ໋ອບແວ',
+            '2022-2025': '2022-2025',
+            'Phone': 'ໂທລະສັບ',
+            'Email': 'ອີເມວ',
+            'Address': 'ທີ່ຢູ່',
+            'Phakhao Village, Saysettha District, Vientiane Capital': 'ບ້ານພະຂາວ, ໄຊທານີ, ນະຄອນຫຼວງວຽງຈັນ',
+            '© 2025 Sengphet PhommaChan - Full-Stack Developer': '© 2025 ແສງເພັດ ພົມມະຈັນ - Full-Stack Developer'
+        };
+
         languageToggle.addEventListener('click', () => {
             if (currentLanguage === 'lo') {
                 currentLanguage = 'en';
@@ -999,13 +1083,14 @@
         // Function to update language
         function updateLanguage() {
             document.querySelectorAll('[data-en]').forEach(element => {
+                const englishText = element.getAttribute('data-en');
                 if (currentLanguage === 'en') {
-                    element.textContent = element.getAttribute('data-en');
+                    element.textContent = englishText;
                 } else {
-                    // For Lao, we need to restore the original text
-                    // This is a simplified approach - in a real app, you'd store both translations
-                    if (element.hasAttribute('data-original')) {
-                        element.textContent = element.getAttribute('data-original');
+                    // Switch back to Lao
+                    const laoText = laoTranslations[englishText];
+                    if (laoText) {
+                        element.textContent = laoText;
                     }
                 }
             });
@@ -1018,11 +1103,6 @@
             languageIcon.textContent = '🇺🇸';
             updateLanguage();
         }
-
-        // Store original text for Lao language
-        document.querySelectorAll('[data-en]').forEach(element => {
-            element.setAttribute('data-original', element.textContent);
-        });
     </script>
 </body>
 </html>
