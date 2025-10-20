@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ລາຍລະອຽດໂປຣເຈັກ - ລະບົບຫາວຽກອອນລາຍ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #8b5cf6;
+            --accent-color: #ec4899;
+            --text-light: #1f2937;
+            --text-dark: #f9fafb;
+            --bg-light: #f3f4f6;
+            --bg-dark: #1a1a2e;
+            --card-light: #ffffff;
+            --card-dark: rgba(31, 41, 55, 0.5);
+        }
+
+        body {
+            font-family: 'Noto Sans Lao', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #1a1a2e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        body.light-mode {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 50%, #f3f4f6 100%);
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .back-button {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(96, 165, 250, 0.3);
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(31, 41, 55, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(75, 85, 99, 0.5);
+        }
+
+        body.light-mode .project-header {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(209, 213, 219, 0.5);
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .project-category {
+            font-size: 1.2rem;
+            color: #a78bfa;
+            margin-bottom: 1rem;
+        }
+
+        body.light-mode .project-category {
+            color: #7c3aed;
+        }
+
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border: 2px solid rgba(96, 165, 250, 0.3);
+        }
+
+        .project-image:hover {
+            transform: scale(1.02);
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-details {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: rgba(31, 41, 55, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(75, 85, 99, 0.5);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        body.light-mode .card {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(209, 213, 219, 0.5);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
+            border-color: rgba(96, 165, 250, 0.5);
+        }
+
+        .card h3 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        body.light-mode .card h3 {
+            color: #2563eb;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+
+        .tech-item {
+            padding: 0.5rem 1.2rem;
+            background: rgba(167, 139, 250, 0.2);
+            border: 1px solid rgba(167, 139, 250, 0.3);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        body.light-mode .tech-item {
+            background: rgba(167, 139, 250, 0.1);
+            color: #1f2937;
+        }
+
+        .tech-item:hover {
+            background: rgba(167, 139, 250, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .features-list li {
+            padding: 0.8rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #d1d5db;
+            border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+        }
+
+        body.light-mode .features-list li {
+            color: #4b5563;
+            border-bottom: 1px solid rgba(209, 213, 219, 0.3);
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            color: #60a5fa;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.3rem;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            box-shadow: 0 5px 20px rgba(96, 165, 250, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(96, 165, 250, 0.5);
+        }
+
+        .btn-secondary {
+            border: 2px solid #3b82f6;
+            color: white;
+        }
+
+        body.light-mode .btn-secondary {
+            color: #1f2937;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(59, 130, 246, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .project-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(96, 165, 250, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(96, 165, 250, 0.3);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #d1d5db;
+            font-size: 0.9rem;
+        }
+
+        body.light-mode .stat-label {
+            color: #6b7280;
+        }
+
+        .demo-section {
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .demo-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i> ກັບໄປໜ້າ Portfolio
+        </button>
+
+        <div class="project-header">
+            <h1 class="project-title">ລະບົບຫາວຽກອອນລາຍ</h1>
+            <p class="project-category"><i class="fas fa-globe"></i> Full-Stack Web Development</p>
+            <p style="color: #d1d5db; max-width: 600px; margin: 0 auto;">
+                ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບເຊື່ອມຕໍ່ຜູ້ປະກອບການກັບຜູ້ສະໝັກວຽກ 
+                ດ້ວຍເຕັກໂນໂລຊີທີ່ທັນສະໄໝ ແລະ ອິນເຕີເຟດທີ່ງ່າຍຕໍ່ການໃຊ້ງານ
+            </p>
+        </div>
+
+        <!-- ພາກສ່ວນສະຖິຕິ -->
+        <div class="project-stats">
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">ໜ້າທີ່ພັດທະນາ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">ເທັກໂນໂລຊີຫຼັກ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">ຄຸນສົມບັດພິເສດ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2 ເດືອນ</div>
+                <div class="stat-label">ເວລາພັດທະນາ</div>
+            </div>
+        </div>
+
+        <!-- ພາກສ່ວນຮູບພາບ -->
+        <div class="project-images">
+            <img src="https://via.placeholder.com/600x400/1a1a2e/60a5fa?text=ໜ້າຫຼັກ+ລະບົບ" alt="ໜ້າຫຼັກລະບົບ" class="project-image">
+            <img src="https://via.placeholder.com/600x400/0f3460/a78bfa?text=ໜ້າຄົ້ນຫາວຽກ" alt="ໜ້າຄົ້ນຫາວຽກ" class="project-image">
+            <img src="https://via.placeholder.com/600x400/1a1a2e/ec4899?text=ໜ້າຈັດການໂປຣໄຟລ໌" alt="ໜ້າຈັດການໂປຣໄຟລ໌" class="project-image">
+            <img src="https://via.placeholder.com/600x400/0f3460/60a5fa?text=ໜ້າສະໝັກວຽກ" alt="ໜ້າສະໝັກວຽກ" class="project-image">
+        </div>
+
+        <div class="project-details">
+            <div class="main-content">
+                <!-- ລາຍລະອຽດໂປຣເຈັກ -->
+                <div class="card">
+                    <h3><i class="fas fa-info-circle"></i> ລາຍລະອຽດໂປຣເຈັກ</h3>
+                    <p style="color: #d1d5db; line-height: 1.8;">
+                        ລະບົບຫາວຽກອອນລາຍເປັນເວັບໄຊທີ່ພັດທະນາຂຶ້ນເພື່ອແກ້ໄຂບັນຫາການຫາວຽກໃນຍຸກດິຈິຕອນ. 
+                        ລະບົບນີ້ອະນຸຍາດໃຫ້ຜູ້ສະໝັກວຽກສາມາດຄົ້ນຫາວຽກ, ສະໝັກວຽກ ແລະ ຈັດການໂປຣໄຟລ໌ຂອງຕົນເອງ 
+                        ໃນຂະນະທີ່ຜູ້ປະກອບການສາມາດປະກາດວຽກ, ຄັດເລືອ�ຜູ້ສະໝັກ ແລະ ຈັດການຂໍ້ມູນວຽກໄດ້ຢ່າງມີປະສິດທິພາບ.
+                    </p>
+                </div>
+
+                <!-- ຄວາມສາມາດທີ່ໃຊ້ -->
+                <div class="card">
+                    <h3><i class="fas fa-list-check"></i> ຄວາມສາມາດທີ່ໃຊ້</h3>
+                    <div class="tech-list">
+                        <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-item"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                        <span class="tech-item"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-item"><i class="fas fa-bolt"></i> jQuery</span>
+                        <span class="tech-item"><i class="fas fa-server"></i> Apache</span>
+                    </div>
+                </div>
+
+                <!-- ຄຸນສົມບັດພິເສດ -->
+                <div class="card">
+                    <h3><i class="fas fa-star"></i> ຄຸນສົມບັດພິເສດ</h3>
+                    <ul class="features-list">
+                        <li><strong>ລະບົບລ໋ອກອິນ/ລົງທະບຽນ:</strong> ສຳລັບທັງຜູ້ສະໝັກວຽກ ແລະ ຜູ້ປະກອບການ</li>
+                        <li><strong>ການຄົ້ນຫາວຽກທີ່ຊັດເຈນ:</strong> ຄົ້ນຫາຕາມປະເພດວຽກ, ສະຖານທີ່, ເງິນເດືອນ</li>
+                        <li><strong>ຈັດການໂປຣໄຟລ໌:</strong> ບັນທຶກປະຫວັດການສຶກສາ, ປະສົບການເຮັດວຽກ</li>
+                        <li><strong>ລະບົບສະໝັກວຽກ:</strong> ສະໝັກວຽກອອນລາຍ ແລະ ຕິດຕາມສະຖານະ</li>
+                        <li><strong>ການປະກາດວຽກ:</strong> ຜູ້ປະກອບການສາມາດເພີ່ມ/ແກ້ໄຂ/ລຶບວຽກໄດ້</li>
+                        <li><strong>ລະບົບແຈ້ງເຕືອນ:</strong> ແຈ້ງເຕືອນເມື່ອມີວຽກໃໝ່ ຫຼື ມີການສະໝັກວຽກ</li>
+                        <li><strong>ລະບົບຄົ້ນຫາແບບກຳນົດເອງ:</strong> ຄົ້ນຫາວຽກຕາມຄວາມຖະໜັດຂອງຜູ້ໃຊ້</li>
+                        <li><strong>ລະບົບຮາດສະໝັກວຽກ:</strong> ດາວໂຫຼດ ແລະ ອັບໂຫຼດເອກະສານຮາດສະໝັກ</li>
+                    </ul>
+                </div>
+
+                <!-- ຄວາມທ້າທາຍ ແລະ ວິທີແກ້ໄຂ -->
+                <div class="card">
+                    <h3><i class="fas fa-puzzle-piece"></i> ຄວາມທ້າທາຍ ແລະ ວິທີແກ້ໄຂ</h3>
+                    <ul class="features-list">
+                        <li><strong>ຄວາມປອດໄພຂໍ້ມູນ:</strong> ໃຊ້ລະບົບການລ໋ອກອິນທີ່ປອດໄພ ແລະ ເຂົ້າລະຫັດຂໍ້ມູນ</li>
+                        <li><strong>ປະສິດທິພາບການຄົ້ນຫາ:</strong> ພັດທະນາລະບົບຄົ້ນຫາທີ່ໄວ ແລະ ມີປະສິດທິພາບ</li>
+                        <li><strong>ການຈັດການຂໍ້ມູນ:</strong> ອອກແບບຖານຂໍ້ມູນໃຫ້ມີຄວາມສອດຄ່ອງ ແລະ ງ່າຍຕໍ່ການບໍລິຫານ</li>
+                        <li><strong>ປະສົບການຜູ້ໃຊ້:</strong> ອອກແບບອິນເຕີເຟດທີ່ງ່າຍຕໍ່ການໃຊ້ງານ ແລະ ຕອບສະໜອງທຸກອຸປະກອນ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <!-- ເທັກໂນໂລຊີ -->
+                <div class="card">
+                    <h3><i class="fas fa-tools"></i> ເທັກໂນໂລຊີ</h3>
+                    <div style="color: #d1d5db;">
+                        <p><strong>Backend:</strong> PHP, MySQL</p>
+                        <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript</p>
+                        <p><strong>Framework:</strong> Tailwind CSS, jQuery</p>
+                        <p><strong>Server:</strong> Apache</p>
+                        <p><strong>Database:</strong> MySQL</p>
+                        <p><strong>Version Control:</strong> Git</p>
+                    </div>
+                </div>
+
+                <!-- ລິ້ງທີ່ກ່ຽວຂ້ອງ -->
+                <div class="card">
+                    <h3><i class="fas fa-link"></i> ລິ້ງທີ່ກ່ຽວຂ້ອງ</h3>
+                    <div class="demo-buttons" style="flex-direction: column;">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-file-pdf"></i> ເອກະສານໂປຣເຈັກ
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ຂໍ້ມູນໂຄງການ -->
+                <div class="card">
+                    <h3><i class="fas fa-calendar"></i> ຂໍ້ມູນໂຄງການ</h3>
+                    <div style="color: #d1d5db;">
+                        <p><strong>ເລີ່ມພັດທະນາ:</strong> ມັງກອນ 2024</p>
+                        <p><strong>ເສັດພັດທະນາ:</strong> ມີນາ 2024</p>
+                        <p><strong>ໄລຍະເວລາ:</strong> 2 ເດືອນ</p>
+                        <p><strong>ສະຖານະ:</strong> ແລ້ວສຳເລັດ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ພາກສ່ວນ Demo -->
+        <div class="demo-section">
+            <div class="card">
+                <h3><i class="fas fa-play-circle"></i> ສາລະພາບການໃຊ້ງານ</h3>
+                <p style="color: #d1d5db; margin-bottom: 1.5rem;">
+                    ຊົມເຊີຍຄວາມສາມາດຂອງລະບົບຜ່ານວິດີໂອສາທິດ ແລະ ທົດລອງໃຊ້ງານລະບົບ
+                </p>
+                <div class="demo-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-play"></i> ຊົມວິດີໂອ Demo
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-hand-pointer"></i> ທົດລອງໃຊ້ງານ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            // ກັບໄປໜ້າກ່ອນໜ້າ ຫຼື ໜ້າ Portfolio
+            window.location.href = 'index.html';
+        }
+
+        // ເພີ່ມ animation ໃຫ້ກັບ cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

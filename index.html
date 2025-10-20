@@ -814,7 +814,7 @@
       </h2>
       <div class="card-grid">
         <div class="card">
-          <h3>
+          <h3 onclick="openProject('jobhunt')" style="cursor: pointer;">
             <span data-en="Online Job Search System">ລະບົບຫາວຽກອອນລາຍ</span>
           </h3>
           <p class="card-category">
@@ -1462,6 +1462,20 @@
         languageIcon.className = "fas fa-globe-americas";
         updateLanguage();
       }
+
+      // Function ເປີດໜ້າລາຍລະອຽດໂປຣເຈັກ
+        function openProject(projectId) {
+            // ບັນທຶກໂປຣເຈັກທີ່ເລືອກ
+            localStorage.setItem('selectedProject', projectId);
+            
+            // ເປີດໜ້າໃໝ່
+            window.open(`jobhunt-detail.html`, '_blank');
+        }
+
+        // ຫຼື ຖ້າຕ້ອງການໃຊ້ URL parameters
+        function openProjectWithParam(projectId) {
+            window.open(`jobhunt-detail.html?project=${projectId}`, '_blank');
+        }
     </script>
 </body>
 </html>
