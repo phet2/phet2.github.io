@@ -6,6 +6,10 @@
     <title>ແສງເພັດ ພົມມະຈັນ - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
         * {
             margin: 0;
@@ -586,284 +590,623 @@
 </head>
 <body>
     <nav id="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <div class="logo">SP</div>
-                <button class="language-toggle" id="languageToggle" title="Toggle Language">
-                    <span id="languageIcon">🇱🇦</span>
-                </button>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" data-en="Home">ໜ້າຫຼັກ</a></li>
-                <li><a href="#about" data-en="About">ກ່ຽວກັບ</a></li>
-                <li><a href="#skills" data-en="Skills">ທັກສະ</a></li>
-                <li><a href="#projects" data-en="Projects">ໂປຣເຈັກ</a></li>
-                <li><a href="#experience" data-en="Experience">ປະສົບການ</a></li>
-                <li><a href="#contact" data-en="Contact">ຕິດຕໍ່</a></li>
-            </ul>
-            <div class="nav-right">
-                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
-                    <span id="themeIcon">🌙</span>
-                </button>
-                <div class="mobile-menu" id="mobileMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo"><i class="fas fa-code"></i> SP</div>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            title="Toggle Language"
+          >
+            <i class="fas fa-language" id="languageIcon"></i>
+          </button>
         </div>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#home"
+              >
+              <span data-en="Home">ໜ້າຫຼັກ</span></a
+            >
+          </li>
+          <li>
+            <a href="#about"
+              >
+              <span data-en="About">ກ່ຽວກັບ</span></a
+            >
+          </li>
+          <li>
+            <a href="#skills"
+              >
+              <span data-en="Skills">ທັກສະ</span></a
+            >
+          </li>
+          <li>
+            <a href="#projects"
+              >
+              <span data-en="Projects">ໂປຣເຈັກ</span></a
+            >
+          </li>
+          <li>
+            <a href="#experience"
+              >
+              <span data-en="Experience">ປະສົບການ</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              >
+              <span data-en="Contact">ຕິດຕໍ່</span></a
+            >
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <div class="mobile-menu" id="mobileMenu">
+            <span></span> <span></span> <span></span>
+          </div>
+        </div>
+      </div>
     </nav>
-
     <section id="home" class="hero">
-        <div class="hero-content">
-            <img class="profile-image" src="logo.jpg" alt="">
-            <h1 data-en="Sengphet PHOMMACHAN">ແສງເພັດ ພົມມະຈັນ</h1>
-            <h2 data-en="Full-Stack Developer">Full-Stack Developer</h2>
-            <div class="tech-tags">
-                <span class="tag">PHP</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">React</span>
-                <span class="tag">MySQL</span>
-            </div>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary" data-en="Contact Me">ຕິດຕໍ່ຂ້ອຍ</a>
-                <a href="#projects" class="btn btn-secondary" data-en="View Projects">ເບິ່ງໂປຣເຈັກ</a>
-                <a href="resume.pdf" class="btn btn-primary" download data-en="Download Resume">ດາວໂຫຼດ Resume</a>
-            </div>
+      <div class="hero-content">
+        <img class="profile-image" src="logo.jpg" alt="">
+        <h1 data-en="Sengphet PHOMMACHAN">ແສງເພັດ ພົມມະຈັນ</h1>
+        <h2 data-en="Full-Stack Developer">Full-Stack Developer</h2>
+        <div class="tech-tags">
+          <span class="tag"><i class="fab fa-php"></i> PHP</span>
+          <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="tag"><i class="fab fa-react"></i> React</span>
+          <span class="tag"><i class="fas fa-database"></i> MySQL</span>
         </div>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary"
+            ><i class="fas fa-paper-plane"></i>
+            <span data-en="Contact Me">ຕິດຕໍ່ຂ້ອຍ</span></a
+          >
+          <a href="#projects" class="btn btn-secondary"
+            ><i class="fas fa-eye"></i>
+            <span data-en="View Projects">ເບິ່ງໂປຣເຈັກ</span></a
+          >
+          <a href="Sengphet_resume.pdf" class="btn btn-primary" download
+            ><i class="fas fa-download"></i>
+            <span data-en="Download Resume">ດາວໂຫຼດ Resume</span></a
+          >
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <h2 class="section-title" data-en="About Me">ກ່ຽວກັບຂ້ອຍ</h2>
-        <div class="card-grid">
-            <div class="card">
-                <h3 data-en="Summary">ສະຫຼຸບຄວາມສາມາດ</h3>
-                <p style="color: #d1d5db;" data-en="I am a creative web developer with full-stack development capabilities. I have expertise in using PHP, MySQL, HTML, CSS, JavaScript, and React to create modern systems and website designs. I am passionate about providing innovative solutions and continuously learning new technologies.">
-                    ຂ້ອຍເປັນນັກພັດທະນາເວັບໄຊທີ່ມີຄວາມຄິດສ້າງສັນ ແລະມີຄວາມສາມາດພື້ນຖານໃນການພັດທະນາເວັບໄຊເຕັມຮູບແບບ (Full-Stack). 
-                    ມີຄວາມຊ່ຽວຊານໃນການໃຊ້ PHP, MySQL, HTML, CSS, JavaScript ແລະ React ເພື່ອສ້າງລະບົບ ແລະອອກແບບໜ້າເວັບທີ່ທັນສະໄໝ. 
-                    ມີຄວາມກະຕືລືລົ້ນທີ່ຈະສະໜອງວິທີແກ້ໄຂໃຫມ່ໆ ແລະຮຽນຮູ້ເທັກໂນໂລຊີໃໝ່ຢ່າງຕໍ່ເນື່ອງ.
-                </p>
-            </div>
-            <div class="card">
-                <h3 data-en="Personal Information">ຂໍ້ມູນສ່ວນຕົວ</h3>
-                <p style="color: #d1d5db;">
-                    <strong data-en="Date of Birth">ວັນເກີດ:</strong> 16 ມີນາ 2004<br>
-                    <strong data-en="Nationality">ສັນຊາດ:</strong> ລາວ<br>
-                    <strong data-en="Hometown">ບ້ານເກີດ:</strong> ກອງ, ບຸນເໜືອ, ຜົ້ງສາລີ<br>
-                    <strong data-en="Languages">ພາສາ:</strong> ລາວ (ດີ), ອັງກິດ (ພື້ນຖານ), ຈີນ (ພື້ນຖານ)
-                </p>
-            </div>
+      <h2 class="section-title">
+        <i class="fas fa-user"></i> <span data-en="About Me">ກ່ຽວກັບຂ້ອຍ</span>
+      </h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>
+            <i class="fas fa-file-alt"></i>
+            <span data-en="Summary">ສະຫຼຸບຄວາມສາມາດ</span>
+          </h3>
+          <p
+            style="color: #d1d5db"
+            data-en="I am a creative web developer with full-stack development capabilities. I have expertise in using PHP, MySQL, HTML, CSS, JavaScript and React to create modern systems and website designs. I am passionate about providing innovative solutions and continuously learning new technologies."
+          >
+            ຂ້ອຍເປັນນັກພັດທະນາເວັບໄຊທີ່ມີຄວາມຄິດສ້າງສັນ ແລະ
+            ມີຄວາມສາມາດພື້ນຖານໃນການພັດທະນາເວັບໄຊເຕັມຮູບແບບ (Full-Stack).
+            ມີຄວາມຊ່ຽວຊານໃນການໃຊ້ PHP, MySQL, HTML, CSS, JavaScript ແລະ React
+            ເພື່ອສ້າງລະບົບ ແລະ ອອກແບບໜ້າເວັບທີ່ທັນສະໄໝ.
+            ມີຄວາມກະຕືລືລົ້ນທີ່ຈະສະໜອງວິທີແກ້ໄຂໃຫມ່ໆ ແລະ
+            ຮຽນຮູ້ເທັກໂນໂລຊີໃໝ່ຢ່າງຕໍ່ເນື່ອງ.
+          </p>
         </div>
+        <div class="card">
+          <h3>
+            <i class="fas fa-info-circle"></i>
+            <span data-en="Personal Information">ຂໍ້ມູນສ່ວນຕົວ</span>
+          </h3>
+          <p style="color: #d1d5db">
+            <strong
+              ><i class="fas fa-birthday-cake"></i>
+              <span data-en="Date of Birth">ວັນເກີດ:</span></strong
+            >
+            <span data-en="16 March 2004">16 ມີນາ 2004</span><br />
+
+            <strong
+              ><i class="fas fa-flag"></i>
+              <span data-en="Nationality">ສັນຊາດ:</span></strong
+            >
+            <span data-en="Lao">ລາວ</span><br />
+
+            <strong
+              ><i class="fas fa-home"></i>
+              <span data-en="Hometown">ບ້ານເກີດ:</span></strong
+            >
+            <span data-en="Kong, BounNeua, Phongsaly"
+              >ກອງ, ບຸນເໜືອ, ຜົ້ງສາລີ</span
+            ><br />
+
+            <strong
+              ><i class="fas fa-language"></i>
+              <span data-en="Languages">ພາສາ:</span></strong
+            >
+            <span data-en="Lao (Native), English (A2), Chinese (HSK2)"
+              >ລາວ (ພາສາແມ່), ອັງກິດ (A2), ຈີນ (HSK2)</span
+            >
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" style="background: rgba(17, 24, 39, 0.3);">
-        <h2 class="section-title" data-en="Technical Skills">ທັກສະດ້ານວິຊາການ</h2>
-        <div class="skills-grid">
-            <div class="card skill-card">
-                <h4>Front-end</h4>
-                <div class="tech-list">
-                    <span class="tech-item">HTML5</span>
-                    <span class="tech-item">CSS3</span>
-                    <span class="tech-item">JavaScript</span>
-                    <span class="tech-item">jQuery</span>
-                    <span class="tech-item">Bootstrap</span>
-                    <span class="tech-item">Tailwind CSS</span>
-                    <span class="tech-item">React</span>
-                </div>
-            </div>
-            <div class="card skill-card">
-                <h4>Back-end</h4>
-                <div class="tech-list">
-                    <span class="tech-item">PHP</span>
-                    <span class="tech-item">Java</span>
-                    <span class="tech-item">Python</span>
-                    <span class="tech-item">C/C++</span>
-                    <span class="tech-item">Visual Basic</span>
-                </div>
-            </div>
-            <div class="card skill-card">
-                <h4>Database</h4>
-                <div class="tech-list">
-                    <span class="tech-item">MySQL</span>
-                    <span class="tech-item">Firebase</span>
-                </div>
-            </div>
-            <div class="card skill-card">
-                <h4>Mobile</h4>
-                <div class="tech-list">
-                    <span class="tech-item">Android Studio</span>
-                    <span class="tech-item">Flutter</span>
-                    <span class="tech-item">Java</span>
-                </div>
-            </div>
-            <div class="card skill-card">
-                <h4>Other</h4>
-                <div class="tech-list">
-                    <span class="tech-item">Linux</span>
-                    <span class="tech-item">Windows Server</span>
-                    <span class="tech-item">Git</span>
-                    <span class="tech-item">Microsoft Office</span>
-                    <span class="tech-item">Netbean</span>
-                </div>
-            </div>
+    <section id="skills" style="background: rgba(17, 24, 39, 0.3)">
+      <h2 class="section-title">
+        <i class="fas fa-cogs"></i>
+        <span data-en="Technical Skills">ທັກສະດ້ານວິຊາການ</span>
+      </h2>
+      <div class="skills-grid">
+        <div class="card skill-card">
+          <h4><i class="fab fa-html5"></i> Front-end</h4>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tech-item"><i class="fas fa-bolt"></i> jQuery</span>
+            <span class="tech-item"
+              ><i class="fab fa-bootstrap"></i> Bootstrap</span
+            >
+            <span class="tech-item"><i class="fab fa-microsoft"></i> WPF</span>
+            <span class="tech-item"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+            <span class="tech-item"><i class="fab fa-react"></i> React</span>
+          </div>
         </div>
+        <div class="card skill-card">
+          <h4><i class="fas fa-server"></i> Back-end</h4>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fab fa-java"></i> Java</span>
+            <span class="tech-item"><i class="fab fa-python"></i> Python</span>
+            <span class="tech-item"><i class="fas fa-code"></i> C/C++</span>
+            <span class="tech-item"><i class="fab fa-microsoft"></i> C#</span>
+            <span class="tech-item"
+              ><i class="fas fa-desktop"></i> Visual Basic</span
+            >
+          </div>
+        </div>
+        <div class="card skill-card">
+          <h4><i class="fas fa-database"></i> Database</h4>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"><i class="fas fa-fire"></i> Firebase</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <h4><i class="fas fa-mobile-alt"></i> Mobile</h4>
+          <div class="tech-list">
+            <span class="tech-item"
+              ><i class="fab fa-android"></i> Android Studio</span
+            >
+            <span class="tech-item"><i class="fas fa-mobile"></i> Flutter</span>
+            <span class="tech-item"><i class="fab fa-java"></i> Java</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <h4><i class="fas fa-tools"></i> Other</h4>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-linux"></i> Linux</span>
+            <span class="tech-item"
+              ><i class="fab fa-windows"></i> Windows Server</span
+            >
+            <span class="tech-item"><i class="fab fa-git"></i> Git</span>
+            <span class="tech-item"
+              ><i class="fas fa-file-word"></i> Microsoft Office</span
+            >
+            <span class="tech-item"><i class="fas fa-code"></i> Netbean</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
-        <h2 class="section-title" data-en="Development Projects">ໂຄງການພັດທະນາ</h2>
-        <div class="card-grid">
-            <div class="card">
-                <h3 data-en="Online Job Search System">ລະບົບຫາວຽກອອນລາຍ</h3>
-                <p class="card-category" data-en="Full-Stack Web Development">Full-Stack Web Development</p>
-                <div class="tech-list">
-                    <span class="tech-item">PHP</span>
-                    <span class="tech-item">MySQL</span>
-                    <span class="tech-item">JavaScript</span>
-                    <span class="tech-item">Bootstrap</span>
-                </div>
-                <p style="color: #d1d5db; margin: 1rem 0;" data-en="A full-featured web system for connecting employers with job seekers, featuring search, job application, and profile management.">
-                    ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບເຊື່ອມຕໍ່ຜູ້ປະກອບການກັບຜູ້ສະໝັກວຽກ ມີການຄົ້ນຫາ, ສະໝັກວຽກ, ແລະຈັດການໂປຣໄຟລ໌
-                </p>
-                <ul class="features-list">
-                    <li data-en="Login/Registration System">ລະບົບລ໋ອກອິນ/ລົງທະບຽນ</li>
-                    <li data-en="Job Search">ການຄົ້ນຫາວຽກ</li>
-                    <li data-en="Profile Management">ຈັດການໂປຣໄຟລ໌</li>
-                    <li data-en="Job Application System">ລະບົບສະໝັກວຽກ</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>E-Commerce Platform</h3>
-                <p class="card-category" data-en="Full-Stack Development">Full-Stack Development</p>
-                <div class="tech-list">
-                    <span class="tech-item">PHP</span>
-                    <span class="tech-item">MySQL</span>
-                    <span class="tech-item">JavaScript</span>
-                    <span class="tech-item">Bootstrap</span>
-                </div>
-                <p style="color: #d1d5db; margin: 1rem 0;" data-en="Online shopping website with product catalog, order management, and payment system.">
-                    ເວັບໄຊຊື້-ຂາຍອອນລາຍ ມີລະບົບຕະກ້າສິນຄ້າ, ການຈັດການຄຳສັ່ງຊື້, ແລະລະບົບຊຳລະເງິນ
-                </p>
-                <ul class="features-list">
-                    <li>Shopping Cart</li>
-                    <li data-en="Payment System">ລະບົບຊຳລະເງິນ</li>
-                    <li data-en="Product Tracking">ຕິດຕາມສິນຄ້າ</li>
-                    <li data-en="Product Management System">ລະບົບຄວບຄຸມສິນຄ້າ</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 data-en="Task Management App">Task Management App</h3>
-                <p class="card-category" data-en="Mobile Development">Mobile Development</p>
-                <div class="tech-list">
-                    <span class="tech-item">Flutter</span>
-                    <span class="tech-item">Firebase</span>
-                    <span class="tech-item">Dart</span>
-                </div>
-                <p style="color: #d1d5db; margin: 1rem 0;" data-en="Task management application with notifications, progress tracking, and team collaboration.">
-                    ແອັບພລິເຄຊັນຈັດການວຽກງານ ມີການແຈ້ງເຕືອນ, ຕິດຕາມຄວາມຄືບໜ້າ, ແລະການທຳງານເປັນທີມ
-                </p>
-                <ul class="features-list">
-                    <li data-en="Time-based Notifications">ແຈ້ງເຕືອນລະຍະເວລາ</li>
-                    <li data-en="Team Collaboration">ຮ່ວມມືກັນທຳງານ</li>
-                    <li data-en="Progress Reports">ລາຍງານຄວາມຄືບໜ້າ</li>
-                    <li data-en="Work Calendar">ປະຕິທິນວຽກ</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 data-en="Restaurant POS System">Restaurant POS System</h3>
-                <p class="card-category" data-en="Desktop Application">Desktop Application</p>
-                <div class="tech-list">
-                    <span class="tech-item">Java</span>
-                    <span class="tech-item">MySQL</span>
-                    <span class="tech-item">JavaFX</span>
-                </div>
-                <p style="color: #d1d5db; margin: 1rem 0;" data-en="Point of sale system for restaurants with bill calculation, product management, and sales reporting.">
-                    ລະບົບຂາຍໜ້າຮ້ານສຳລັບຮ້ານອາຫານ ມີການຄຳນວນບິນ, ຈັດການສິນຄ້າ, ແລະລາຍງານຍອດຂາຍ
-                </p>
-                <ul class="features-list">
-                    <li data-en="Point of Sale System">ລະບົບຂາຍໜ້າຮ້ານ</li>
-                    <li data-en="Automatic Bill Calculation">ຄຳນວນບິນອັດຕະໂນມັດ</li>
-                    <li data-en="Sales Reports">ລາຍງານຍອດຂາຍ</li>
-                    <li data-en="Stock Management">ຈັດການສະຕ໋ອກ</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 data-en="School Management System">School Management System</h3>
-                <p class="card-category" data-en="Web Application">Web Application</p>
-                <div class="tech-list">
-                    <span class="tech-item">PHP</span>
-                    <span class="tech-item">MySQL</span>
-                    <span class="tech-item">JavaScript</span>
-                    <span class="tech-item">Bootstrap</span>
-                </div>
-                <p style="color: #d1d5db; margin: 1rem 0;" data-en="School management system with grade recording, attendance, and teacher-student communication.">
-                    ລະບົບຈັດການໂຮງຮຽນ ມີການບັນທຶກຄະແນນ, ການເຂົ້າຮຽນ, ແລະການສື່ສານລະຫວ່າງຄູ-ນັກຮຽນ
-                </p>
-                <ul class="features-list">
-                    <li data-en="Grade Recording">ບັນທຶກຄະແນນ</li>
-                    <li data-en="Attendance System">ລະບົບເຂົ້າຮຽນ</li>
-                    <li data-en="Class Schedule">ຕາຕະລາງຮຽນ</li>
-                    <li data-en="Academic Reports">ລາຍງານຜົນການຮຽນ</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 data-en="Weather Forecast App">Weather Forecast App</h3>
-                <p class="card-category" data-en="Mobile Development">Mobile Development</p>
-                <div class="tech-list">
-                    <span class="tech-item">Android Studio</span>
-                    <span class="tech-item">Java</span>
-                    <span class="tech-item">API</span>
-                </div>
-                <p style="color: #d1d5db; margin: 1rem 0;" data-en="Weather application connected to API displaying daily weather information.">
-                    ແອັບພລິເຄຊັນພະຍາກອນອາກາດ ເຊື່ອມຕໍ່ກັບ API ສະແດງຂໍ້ມູນອາກາດປະຈຳວັນ
-                </p>
-                <ul class="features-list">
-                    <li data-en="7-Day Forecast">ພະຍາກອນ 7 ວັນ</li>
-                    <li data-en="Weather Alerts">ແຈ້ງເຕືອນສະພາບອາກາດ</li>
-                    <li data-en="Current Location">ຕຳແໜ່ງປັດຈຸບັນ</li>
-                    <li data-en="Beautiful UI">UI ສວຍງາມ</li>
-                </ul>
-            </div>
+      <h2 class="section-title">
+        <i class="fas fa-project-diagram"></i>
+        <span data-en="Development Projects">ໂຄງການພັດທະນາ</span>
+      </h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>
+            <span data-en="Online Job Search System">ລະບົບຫາວຽກອອນລາຍ</span>
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-globe"></i>
+            <span data-en="Full-Stack Web Development"
+              >Full-Stack Web Development</span
+            >
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tech-item"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="A full-featured web system for connecting employers with job seekers, featuring search, job application and profile management."
+          >
+            ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບເຊື່ອມຕໍ່ຜູ້ປະກອບການກັບຜູ້ສະໝັກວຽກ
+            ມີການຄົ້ນຫາ, ສະໝັກວຽກ ແລະ ຈັດການໂປຣໄຟລ໌
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-sign-in-alt"></i>
+              <span data-en="Login/Registration System"
+                >ລະບົບລ໋ອກອິນ/ລົງທະບຽນ</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-search"></i>
+              <span data-en="Job Search">ການຄົ້ນຫາວຽກ</span>
+            </li>
+            <li>
+              <i class="fas fa-user-circle"></i>
+              <span data-en="Profile Management">ຈັດການໂປຣໄຟລ໌</span>
+            </li>
+            <li>
+              <i class="fas fa-file-alt"></i>
+              <span data-en="Job Application System">ລະບົບສະໝັກວຽກ</span>
+            </li>
+          </ul>
         </div>
+
+        <div class="card">
+          <h3>E-Commerce Platform</h3>
+          <p class="card-category">
+            <i class="fas fa-shopping-bag"></i>
+            <span data-en="Full-Stack Development">Full-Stack Development</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tech-item"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="Online shopping website with product catalog, order management and payment system."
+          >
+            ເວັບໄຊຊື້-ຂາຍອອນລາຍ ມີລະບົບຕະກ້າສິນຄ້າ, ການຈັດການຄຳສັ່ງຊື້ ແລະ
+            ລະບົບຊຳລະເງິນ
+          </p>
+          <ul class="features-list">
+            <li><i class="fas fa-shopping-cart"></i> Shopping Cart</li>
+            <li>
+              <i class="fas fa-credit-card"></i>
+              <span data-en="Payment System">ລະບົບຊຳລະເງິນ</span>
+            </li>
+            <li>
+              <i class="fas fa-box"></i>
+              <span data-en="Product Tracking">ຕິດຕາມສິນຄ້າ</span>
+            </li>
+            <li>
+              <i class="fas fa-cubes"></i>
+              <span data-en="Product Management System">ລະບົບຄວບຄຸມສິນຄ້າ</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>
+            <span data-en="Loan Management System">ລະບົບປ່ອຍເງິນກູ້</span>
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-money-bill-wave"></i>
+            <span data-en="Full-Stack Development">Full-Stack Development</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"><i class="fab fa-html5"></i> HTML</span>
+            <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS</span>
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="A system for managing loan applications, borrower information, repayment schedules and payment tracking."
+          >
+            ລະບົບສໍາລັບຈັດການການຂໍກູ້ເງິນ, ຂໍ້ມູນຜູ້ກູ້, ຕາຕະລາງຈ່າຍເງິນ ແລະ
+            ການຕິດຕາມການຊໍາລະ
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-file-contract"></i>
+              <span data-en="Loan Application Management"
+                >ຈັດການຄໍາຮ້ອງຂໍກູ້ເງິນ</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-users"></i>
+              <span data-en="Borrower Records">ຂໍ້ມູນຜູ້ກູ້</span>
+            </li>
+            <li>
+              <i class="fas fa-calendar-alt"></i>
+              <span data-en="Repayment Schedule">ຕາຕະລາງຈ່າຍເງິນ</span>
+            </li>
+            <li>
+              <i class="fas fa-chart-line"></i>
+              <span data-en="Payment Tracking">ຕິດຕາມການຊໍາລະ</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>
+            <span data-en="Water Billing System">ລະບົບໃບບິນນໍ້າປະປາ</span>
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span data-en="Full-Stack Development">Full-Stack Development</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="A system for managing water billing, customer accounts, meter readings and payment records."
+          >
+            ລະບົບສໍາລັບຈັດການໃບບິນນໍ້າປະປາ, ຂໍ້ມູນລູກຄ້າ, ການອ່ານມິດນໍ້າ ແລະ
+            ການບັນທຶກການຈ່າຍເງິນ
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-users"></i>
+              <span data-en="Customer Management">ຈັດການຂໍ້ມູນລູກຄ້າ</span>
+            </li>
+            <li>
+              <i class="fas fa-tachometer-alt"></i>
+              <span data-en="Meter Reading Records">ບັນທຶກການອ່ານມິດນໍ້າ</span>
+            </li>
+            <li>
+              <i class="fas fa-file-invoice"></i>
+              <span data-en="Bill Generation">ສ້າງໃບບິນນໍ້າປະປາ</span>
+            </li>
+            <li>
+              <i class="fas fa-money-check"></i>
+              <span data-en="Payment Tracking">ຕິດຕາມການຊໍາລະ</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>
+            <span data-en="Restaurant POS System">Restaurant POS System</span>
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-desktop"></i>
+            <span data-en="Desktop Application">Desktop Application</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-java"></i> Java</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"><i class="fab fa-microsoft"></i> C#</span>
+            <span class="tech-item"><i class="fab fa-windows"></i> WPF</span>
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="Point of sale system for restaurants with bill calculation, product management and sales reporting."
+          >
+            ລະບົບຂາຍໜ້າຮ້ານສຳລັບຮ້ານອາຫານ ມີການຄຳນວນບິນ, ຈັດການສິນຄ້າ ແລະ
+            ລາຍງານຍອດຂາຍ
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-cash-register"></i>
+              <span data-en="Point of Sale System">ລະບົບຂາຍໜ້າຮ້ານ</span>
+            </li>
+            <li>
+              <i class="fas fa-calculator"></i>
+              <span data-en="Automatic Bill Calculation"
+                >ຄຳນວນບິນອັດຕະໂນມັດ</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-chart-bar"></i>
+              <span data-en="Sales Reports">ລາຍງານຍອດຂາຍ</span>
+            </li>
+            <li>
+              <i class="fas fa-boxes"></i>
+              <span data-en="Stock Management">ຈັດການສະຕ໋ອກ</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>
+            <span data-en="School Management System"
+              >School Management System</span
+            >
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-school"></i>
+            <span data-en="Web Application">Web Application</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tech-item"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="School management system with grade recording, attendance and teacher-student communication."
+          >
+            ລະບົບຈັດການໂຮງຮຽນ ມີການບັນທຶກຄະແນນ, ການເຂົ້າຮຽນ ແລະ
+            ການສື່ສານລະຫວ່າງຄູ-ນັກຮຽນ
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-chart-line"></i>
+              <span data-en="Grade Recording">ບັນທຶກຄະແນນ</span>
+            </li>
+            <li>
+              <i class="fas fa-user-check"></i>
+              <span data-en="Attendance System">ລະບົບເຂົ້າຮຽນ</span>
+            </li>
+            <li>
+              <i class="fas fa-calendar"></i>
+              <span data-en="Class Schedule">ຕາຕະລາງຮຽນ</span>
+            </li>
+            <li>
+              <i class="fas fa-file-alt"></i>
+              <span data-en="Academic Reports">ລາຍງານຜົນການຮຽນ</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>
+            <span data-en="Meal and Hydration Reminder App"
+              >ແອັບແຈ້ງເຕືອນການກິນເຂົ້າ ແລະ ດື່ມນໍ້າ</span
+            >
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-mobile-alt"></i>
+            <span data-en="Mobile Development">Mobile Development</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fas fa-mobile"></i> Flutter</span>
+            <span class="tech-item"><i class="fas fa-code"></i> Dart</span>
+            <span class="tech-item"
+              ><i class="fas fa-database"></i> SQLite</span
+            >
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="An application that sends notifications for meal and water times and tracks daily intake of food and water (cups/glasses)."
+          >
+            ແອັບພລິເຄຊັນທີ່ສົ່ງການແຈ້ງເຕືອນສຳລັບເວລາອາຫານ ແລະ ນໍ້າ ແລະ
+            ບັນທຶກປະລິມານການກິນເຂົ້າ ແລະ ດື່ມນໍ້າປະຈຳວັນ (ຈຳນວນມື້/ຈອກ).
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-bell"></i>
+              <span data-en="Mealtime Reminders">ແຈ້ງເຕືອນເວລາອາຫານ</span>
+            </li>
+            <li>
+              <i class="fas fa-tint"></i>
+              <span data-en="Water Intake Tracking">ຕິດຕາມການດື່ມນໍ້າ</span>
+            </li>
+            <li>
+              <i class="fas fa-clipboard-list"></i>
+              <span data-en="Daily Intake Log">ບັນທຶກການກິນປະຈຳວັນ</span>
+            </li>
+            <li>
+              <i class="fas fa-chart-pie"></i>
+              <span data-en="Progress Statistics">ສະຖິຕິຄວາມຄືບໜ້າ</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="experience" style="background: rgba(17, 24, 39, 0.3);">
-        <h2 class="section-title" data-en="Experience & Education">ປະສົບການ & ການສຶກສາ</h2>
-        <div class="card-grid">
-            <div class="card">
-                <h3 style="color: #60a5fa;" data-en="Work Experience">ປະສົບການການເຮັດວຽກ</h3>
-                <h4 style="color: #a78bfa; margin: 1rem 0;" data-en="Internship at: Lao Telecom Phongsaly Branch">ຝຶກງານທີ່: ລາວໂທລະຄົມສາຂາແຂວງຜົ້ງສາລີ (Lao Telecom)</h4>
-                <p style="color: #9ca3af; margin-bottom: 1rem;" data-en="February - April 2025">ກຸມພາ - ເມສາ 2025</p>
-                <p style="color: #d1d5db; margin-bottom: 1rem;" data-en="Fixed telephone-Internet and mobile transmission">ໂທລະສັບພື້ນຖານ-ອິນເຕີເນັດ ແລະ ສາຍສົ່ງມືຖື</p>
-                <ul class="features-list">
-                    <li data-en="Configure routers for internet connection and WiFi installation">ຕັ້ງຄ່າເຣົາເຕີເພື່ອຮອງຮັບການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລະ ຕິດຕັ້ງ WiFi</li>
-                    <li data-en="Install signal towers and connect fiber optic cables">ຕິດຕັ້ງເສົາສັນຍານ ແລະ ຕໍ່ສາຍໄຟເບີອ໋ອບຕິກ</li>
-                    <li data-en="Troubleshoot network issues and customer support">ແກ້ໄຂບັນຫາເຄືອຂ່າຍ ແລະ ສະໜັບສະໜູນລູກຄ້າ</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 style="color: #a78bfa;" data-en="Education">ການສຶກສາ</h3>
-                <div style="margin-bottom: 1.5rem;">
-                    <h4 style="color: #60a5fa; margin-bottom: 0.5rem;" data-en="Sudhaka Institute of Technology">ສະຖາບັນເຕັກໂນໂລຊີສຸດສະກະ</h4>
-                    <p style="color: #d1d5db;" data-en="Bachelor's Degree: Computer Programming">ປະລິນຍາຕີ: ການສ້າງໂປຣແກຣມຄອມພິວເຕີ</p>
-                    <p style="color: #9ca3af;" data-en="2025-Present">2025-ປັດຈຸບັນ</p>
-                </div>
-                <div>
-                    <h4 style="color: #60a5fa; margin-bottom: 0.5rem;" data-en="BCIT College">ວິທະຍາໄລບີຊີທີ</h4>
-                    <p style="color: #d1d5db;" data-en="High School: Computer Science and Software Engineering">ຊັ້ນສູງ: ວິທະຍາສາດຄອມພິວເຕີ ແລະ ວິສະວະກຳຊ໋ອບແວ</p>
-                    <p style="color: #9ca3af;" data-en="2022-2025">2022-2025</p>
-                </div>
-            </div>
+    <section id="experience" style="background: rgba(17, 24, 39, 0.3)">
+      <h2 class="section-title">
+        <i class="fas fa-briefcase"></i>
+        <span data-en="Experience & Education">ປະສົບການ & ການສຶກສາ</span>
+      </h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3 style="color: #60a5fa">
+            <i class="fas fa-briefcase"></i>
+            <span data-en="Work Experience">ປະສົບການການເຮັດວຽກ</span>
+          </h3>
+          <h4 style="color: #a78bfa; margin: 1rem 0">
+            <span data-en="Internship at: Lao Telecom Phongsaly Branch"
+              >ຝຶກງານທີ່: ລາວໂທລະຄົມສາຂາແຂວງຜົ້ງສາລີ (Lao Telecom)</span
+            >
+          </h4>
+          <p style="color: #9ca3af; margin-bottom: 1rem">
+            <span data-en="February - April 2025">ກຸມພາ - ເມສາ 2025</span>
+          </p>
+          <p style="color: #d1d5db; margin-bottom: 1rem">
+            <span data-en="Fixed telephone-Internet and mobile transmission"
+              >ໂທລະສັບພື້ນຖານ-ອິນເຕີເນັດ ແລະ ສາຍສົ່ງມືຖື</span
+            >
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-router"></i>
+              <span
+                data-en="Configure routers for internet connection and WiFi installation"
+                >ຕັ້ງຄ່າເຣົາເຕີເພື່ອຮອງຮັບການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລະ ຕິດຕັ້ງ
+                WiFi</span
+              >
+            </li>
+            <li>
+              <span
+                data-en="Install signal towers and connect fiber optic cables"
+                >ຕິດຕັ້ງເສົາສັນຍານ ແລະ ຕໍ່ສາຍໄຟເບີອ໋ອບຕິກ</span
+              >
+            </li>
+            <li>
+              <span data-en="Troubleshoot network issues and customer support"
+                >ແກ້ໄຂບັນຫາເຄືອຂ່າຍ ແລະ ສະໜັບສະໜູນລູກຄ້າ</span
+              >
+            </li>
+          </ul>
         </div>
+
+        <div class="card">
+          <h3 style="color: #a78bfa">
+            <i class="fas fa-graduation-cap"></i>
+            <span data-en="Education">ການສຶກສາ</span>
+          </h3>
+          <div style="margin-bottom: 1.5rem">
+            <h4 style="color: #60a5fa; margin-bottom: 0.5rem">
+              <span data-en="Soutsaka Institute of Technology"
+                >ສະຖາບັນ ເຕັກໂນໂລຊີ ສຸດສະກະ</span
+              >
+            </h4>
+            <p style="color: #d1d5db">
+              <span data-en="Bachelor's Degree: Computer Programming"
+                >ປະລິນຍາຕີ: ການສ້າງໂປຣແກຣມຄອມພິວເຕີ</span
+              >
+            </p>
+            <p style="color: #9ca3af">
+              <span data-en="2025 - Present">2025 - ປັດຈຸບັນ</span>
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #60a5fa; margin-bottom: 0.5rem">
+              <span data-en="BCT College for I.T Education"
+                >ວິທະຍາໄລ ບີຊີທີ ເພື່ອການສຶກສາດ້ານໄອທີ</span
+              >
+            </h4>
+            <p style="color: #d1d5db">
+              <span
+                data-en="Associate's Degree: Computer Science and Software Engineering"
+                >ຊັ້ນສູງ: ວິທະຍາສາດຄອມພິວເຕີ ແລະ ວິສະວະກຳຊ໋ອບແວ</span
+              >
+            </p>
+            <p style="color: #9ca3af">
+              <span data-en="2022 - 2025">2022 - 2025</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-        <h2 class="section-title" data-en="Contact Me">ຕິດຕໍ່ຂ້ອຍ</h2>
+        <h2 class="section-title"><i class="fas fa-envelope"></i> <span data-en="Contact Me">ຕິດຕໍ່ຂ້ອຍ</span></h2>
         <div class="contact-grid">
             <a href="tel:+8562092468130" class="card contact-card" style="text-decoration: none; color: inherit;">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #60a5fa;">
@@ -893,216 +1236,232 @@
     </section>
 
     <footer>
-        <p data-en="© 2025 Sengphet PhommaChan - Full-Stack Developer">© 2025 ແສງເພັດ ພົມມະຈັນ - Full-Stack Developer</p>
+      <p>
+        <i class="far fa-copyright"></i>
+        <span data-en="2025 Sengphet PHOMMACHAN - Full-Stack Developer"
+          >2025 ແສງເພັດ ພົມມະຈັນ - Full-Stack Developer</span
+        >
+      </p>
     </footer>
 
     <script>
-        // Mobile Menu Toggle
-        const mobileMenu = document.getElementById('mobileMenu');
-        const navLinks = document.getElementById('navLinks');
+      // Mobile Menu Toggle
+      const mobileMenu = document.getElementById("mobileMenu");
+      const navLinks = document.getElementById("navLinks");
 
-        mobileMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
         });
+      });
 
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Navbar Scroll Effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
-
-        // Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('light-mode');
-            if (document.body.classList.contains('light-mode')) {
-                themeIcon.textContent = '☀️';
-                localStorage.setItem('theme', 'light');
-            } else {
-                themeIcon.textContent = '🌙';
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-
-        // Load saved theme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            document.body.classList.add('light-mode');
-            themeIcon.textContent = '☀️';
+      // Navbar Scroll Effect
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
         }
+      });
 
-        // Language Toggle
-        const languageToggle = document.getElementById('languageToggle');
-        const languageIcon = document.getElementById('languageIcon');
-        let currentLanguage = 'lo'; // Default to Lao
-
-        // Lao translations object
-        const laoTranslations = {
-            'Home': 'ໜ້າຫຼັກ',
-            'About': 'ກ່ຽວກັບ',
-            'Skills': 'ທັກສະ',
-            'Projects': 'ໂປຣເຈັກ',
-            'Experience': 'ປະສົບການ',
-            'Contact': 'ຕິດຕໍ່',
-            'Sengphet PHOMMACHAN': 'ແສງເພັດ ພົມມະຈັນ',
-            'Full-Stack Developer': 'Full-Stack Developer',
-            'Contact Me': 'ຕິດຕໍ່ຂ້ອຍ',
-            'View Projects': 'ເບິ່ງໂປຣເຈັກ',
-            'Download Resume': 'ດາວໂຫຼດ Resume',
-            'About Me': 'ກ່ຽວກັບຂ້ອຍ',
-            'Summary': 'ສະຫຼຸບຄວາມສາມາດ',
-            'I am a creative web developer with full-stack development capabilities. I have expertise in using PHP, MySQL, HTML, CSS, JavaScript, and React to create modern systems and website designs. I am passionate about providing innovative solutions and continuously learning new technologies.': 'ຂ້ອຍເປັນນັກພັດທະນາເວັບໄຊທີ່ມີຄວາມຄິດສ້າງສັນ ແລະມີຄວາມສາມາດພື້ນຖານໃນການພັດທະນາເວັບໄຊເຕັມຮູບແບບ (Full-Stack). ມີຄວາມຊ່ຽວຊານໃນການໃຊ້ PHP, MySQL, HTML, CSS, JavaScript ແລະ React ເພື່ອສ້າງລະບົບ ແລະອອກແບບໜ້າເວັບທີ່ທັນສະໄໝ. ມີຄວາມກະຕືລືລົ້ນທີ່ຈະສະໜອງວິທີແກ້ໄຂໃຫມ່ໆ ແລະຮຽນຮູ້ເທັກໂນໂລຊີໃໝ່ຢ່າງຕໍ່ເນື່ອງ.',
-            'Personal Information': 'ຂໍ້ມູນສ່ວນຕົວ',
-            'Date of Birth': 'ວັນເກີດ',
-            'Nationality': 'ສັນຊາດ',
-            'Hometown': 'ບ້ານເກີດ',
-            'Languages': 'ພາສາ',
-            'Technical Skills': 'ທັກສະດ້ານວິຊາການ',
-            'Development Projects': 'ໂຄງການພັດທະນາ',
-            'Online Job Search System': 'ລະບົບຫາວຽກອອນລາຍ',
-            'Full-Stack Web Development': 'Full-Stack Web Development',
-            'A full-featured web system for connecting employers with job seekers, featuring search, job application, and profile management.': 'ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບເຊື່ອມຕໍ່ຜູ້ປະກອບການກັບຜູ້ສະໝັກວຽກ ມີການຄົ້ນຫາ, ສະໝັກວຽກ, ແລະຈັດການໂປຣໄຟລ໌',
-            'Login/Registration System': 'ລະບົບລ໋ອກອິນ/ລົງທະບຽນ',
-            'Job Search': 'ການຄົ້ນຫາວຽກ',
-            'Profile Management': 'ຈັດການໂປຣໄຟລ໌',
-            'Job Application System': 'ລະບົບສະໝັກວຽກ',
-            'Full-Stack Development': 'Full-Stack Development',
-            'Online shopping website with product catalog, order management, and payment system.': 'ເວັບໄຊຊື້-ຂາຍອອນລາຍ ມີລະບົບຕະກ້າສິນຄ້າ, ການຈັດການຄຳສັ່ງຊື້, ແລະລະບົບຊຳລະເງິນ',
-            'Payment System': 'ລະບົບຊຳລະເງິນ',
-            'Product Tracking': 'ຕິດຕາມສິນຄ້າ',
-            'Product Management System': 'ລະບົບຄວບຄຸມສິນຄ້າ',
-            'Task Management App': 'Task Management App',
-            'Mobile Development': 'Mobile Development',
-            'Task management application with notifications, progress tracking, and team collaboration.': 'ແອັບພລິເຄຊັນຈັດການວຽກງານ ມີການແຈ້ງເຕືອນ, ຕິດຕາມຄວາມຄືບໜ້າ, ແລະການທຳງານເປັນທີມ',
-            'Time-based Notifications': 'ແຈ້ງເຕືອນລະຍະເວລາ',
-            'Team Collaboration': 'ຮ່ວມມືກັນທຳງານ',
-            'Progress Reports': 'ລາຍງານຄວາມຄືບໜ້າ',
-            'Work Calendar': 'ປະຕິທິນວຽກ',
-            'Restaurant POS System': 'Restaurant POS System',
-            'Desktop Application': 'Desktop Application',
-            'Point of sale system for restaurants with bill calculation, product management, and sales reporting.': 'ລະບົບຂາຍໜ້າຮ້ານສຳລັບຮ້ານອາຫານ ມີການຄຳນວນບິນ, ຈັດການສິນຄ້າ, ແລະລາຍງານຍອດຂາຍ',
-            'Point of Sale System': 'ລະບົບຂາຍໜ້າຮ້ານ',
-            'Automatic Bill Calculation': 'ຄຳນວນບິນອັດຕະໂນມັດ',
-            'Sales Reports': 'ລາຍງານຍອດຂາຍ',
-            'Stock Management': 'ຈັດການສະຕ໋ອກ',
-            'School Management System': 'School Management System',
-            'Web Application': 'Web Application',
-            'School management system with grade recording, attendance, and teacher-student communication.': 'ລະບົບຈັດການໂຮງຮຽນ ມີການບັນທຶກຄະແນນ, ການເຂົ້າຮຽນ, ແລະການສື່ສານລະຫວ່າງຄູ-ນັກຮຽນ',
-            'Grade Recording': 'ບັນທຶກຄະແນນ',
-            'Attendance System': 'ລະບົບເຂົ້າຮຽນ',
-            'Class Schedule': 'ຕາຕະລາງຮຽນ',
-            'Academic Reports': 'ລາຍງານຜົນການຮຽນ',
-            'Weather Forecast App': 'Weather Forecast App',
-            'Weather application connected to API displaying daily weather information.': 'ແອັບພລິເຄຊັນພະຍາກອນອາກາດ ເຊື່ອມຕໍ່ກັບ API ສະແດງຂໍ້ມູນອາກາດປະຈຳວັນ',
-            '7-Day Forecast': 'ພະຍາກອນ 7 ວັນ',
-            'Weather Alerts': 'ແຈ້ງເຕືອນສະພາບອາກາດ',
-            'Current Location': 'ຕຳແໜ່ງປັດຈຸບັນ',
-            'Beautiful UI': 'UI ສວຍງາມ',
-            'Experience & Education': 'ປະສົບການ & ການສຶກສາ',
-            'Work Experience': 'ປະສົບການການເຮັດວຽກ',
-            'Internship at: Lao Telecom Phongsaly Branch': 'ຝຶກງານທີ່: ລາວໂທລະຄົມສາຂາແຂວງຜົ້ງສາລີ (Lao Telecom)',
-            'February - April 2025': 'ກຸມພາ - ເມສາ 2025',
-            'Fixed telephone-Internet and mobile transmission': 'ໂທລະສັບພື້ນຖານ-ອິນເຕີເນັດ ແລະ ສາຍສົ່ງມືຖື',
-            'Configure routers for internet connection and WiFi installation': 'ຕັ້ງຄ່າເຣົາເຕີເພື່ອຮອງຮັບການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລະ ຕິດຕັ້ງ WiFi',
-            'Install signal towers and connect fiber optic cables': 'ຕິດຕັ້ງເສົາສັນຍານ ແລະ ຕໍ່ສາຍໄຟເບີອ໋ອບຕິກ',
-            'Troubleshoot network issues and customer support': 'ແກ້ໄຂບັນຫາເຄືອຂ່າຍ ແລະ ສະໜັບສະໜູນລູກຄ້າ',
-            'Education': 'ການສຶກສາ',
-            'Sudhaka Institute of Technology': 'ສະຖາບັນເຕັກໂນໂລຊີສຸດສະກະ',
-            "Bachelor's Degree: Computer Programming": 'ປະລິນຍາຕີ: ການສ້າງໂປຣແກຣມຄອມພິວເຕີ',
-            '2025-Present': '2025-ປັດຈຸບັນ',
-            'BCIT College': 'ວິທະຍາໄລບີຊີທີ',
-            'High School: Computer Science and Software Engineering': 'ຊັ້ນສູງ: ວິທະຍາສາດຄອມພິວເຕີ ແລະ ວິສະວະກຳຊ໋ອບແວ',
-            '2022-2025': '2022-2025',
-            'Phone': 'ໂທລະສັບ',
-            'Email': 'ອີເມວ',
-            'Address': 'ທີ່ຢູ່',
-            'Phakhao Village, Saysettha District, Vientiane Capital': 'ບ້ານພະຂາວ, ໄຊທານີ, ນະຄອນຫຼວງວຽງຈັນ',
-            '© 2025 Sengphet PhommaChan - Full-Stack Developer': '© 2025 ແສງເພັດ ພົມມະຈັນ - Full-Stack Developer'
-        };
-
-        languageToggle.addEventListener('click', () => {
-            if (currentLanguage === 'lo') {
-                currentLanguage = 'en';
-                languageIcon.textContent = '🇺🇸';
-            } else {
-                currentLanguage = 'lo';
-                languageIcon.textContent = '🇱🇦';
-            }
-            updateLanguage();
-            localStorage.setItem('language', currentLanguage);
-        });
-
-        // Function to update language
-        function updateLanguage() {
-            document.querySelectorAll('[data-en]').forEach(element => {
-                const englishText = element.getAttribute('data-en');
-                if (currentLanguage === 'en') {
-                    element.textContent = englishText;
-                } else {
-                    // Switch back to Lao
-                    const laoText = laoTranslations[englishText];
-                    if (laoText) {
-                        element.textContent = laoText;
-                    }
-                }
+      // Smooth Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
-        }
+          }
+        });
+      });
 
-        // Load saved language
-        const savedLanguage = localStorage.getItem('language');
-        if (savedLanguage === 'en') {
-            currentLanguage = 'en';
-            languageIcon.textContent = '🇺🇸';
-            updateLanguage();
+      // Intersection Observer for Animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".card").forEach((card) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(card);
+      });
+
+      // Theme Toggle
+      const themeToggle = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        if (document.body.classList.contains("light-mode")) {
+          themeIcon.className = "fas fa-sun";
+          localStorage.setItem("theme", "light");
+        } else {
+          themeIcon.className = "fas fa-moon";
+          localStorage.setItem("theme", "dark");
         }
+      });
+
+      // Load saved theme
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        themeIcon.className = "fas fa-sun";
+      }
+
+      // Language Toggle
+      const languageToggle = document.getElementById("languageToggle");
+      const languageIcon = document.getElementById("languageIcon");
+      let currentLanguage = "lo"; // Default to Lao
+
+      // Lao translations object
+      const laoTranslations = {
+        'Home': 'ໜ້າຫຼັກ',
+        'About': 'ກ່ຽວກັບ',
+        'Skills': 'ທັກສະ',
+        'Projects': 'ໂປຣເຈັກ',
+        'Experience': 'ປະສົບການ',
+        'Contact': 'ຕິດຕໍ່',
+        'Sengphet PHOMMACHAN': 'ແສງເພັດ ພົມມະຈັນ',
+        'Full-Stack Developer': 'Full-Stack Developer',
+        'Contact Me': 'ຕິດຕໍ່ຂ້ອຍ',
+        'View Projects': 'ເບິ່ງໂປຣເຈັກ',
+        'Download Resume': 'ດາວໂຫຼດ Resume',
+        'About Me': 'ກ່ຽວກັບຂ້ອຍ',
+        'Summary': 'ສະຫຼຸບຄວາມສາມາດ',
+        'I am a creative web developer with full-stack development capabilities. I have expertise in using PHP, MySQL, HTML, CSS, JavaScript and React to create modern systems and website designs. I am passionate about providing innovative solutions and continuously learning new technologies.': 'ຂ້ອຍເປັນນັກພັດທະນາເວັບໄຊທີ່ມີຄວາມຄິດສ້າງສັນ ແລະ ມີຄວາມສາມາດພື້ນຖານໃນການພັດທະນາເວັບໄຊເຕັມຮູບແບບ (Full-Stack). ມີຄວາມຊ່ຽວຊານໃນການໃຊ້ PHP, MySQL, HTML, CSS, JavaScript ແລະ React ເພື່ອສ້າງລະບົບ ແລະ ອອກແບບໜ້າເວັບທີ່ທັນສະໄໝ. ມີຄວາມກະຕືລືລົ້ນທີ່ຈະສະໜອງວິທີແກ້ໄຂໃຫມ່ໆ ແລະ ຮຽນຮູ້ເທັກໂນໂລຊີໃໝ່ຢ່າງຕໍ່ເນື່ອງ.',
+        'Personal Information': 'ຂໍ້ມູນສ່ວນຕົວ',
+        'Date of Birth': 'ວັນເກີດ',
+        'Nationality': 'ສັນຊາດ',
+        'Hometown': 'ບ້ານເກີດ',
+        'Languages': 'ພາສາ',
+        '16 March 2004': '16 ມີນາ 2004',
+        'Lao': 'ລາວ',
+        'Kong, BounNeua, Phongsaly': 'ກອງ, ບຸນເໜືອ, ຜົ້ງສາລີ',
+        'Lao (Native), English (A2), Chinese (HSK2)': 'ລາວ (ພາສາແມ່), ອັງກິດ (A2), ຈີນ (HSK2)',
+        'Technical Skills': 'ທັກສະດ້ານວິຊາການ',
+        'Development Projects': 'ໂຄງການພັດທະນາ',
+        'Online Job Search System': 'ລະບົບຫາວຽກອອນລາຍ',
+        'Full-Stack Web Development': 'Full-Stack Web Development',
+        'A full-featured web system for connecting employers with job seekers, featuring search, job application and profile management.': 'ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບເຊື່ອມຕໍ່ຜູ້ປະກອບການກັບຜູ້ສະໝັກວຽກ ມີການຄົ້ນຫາ, ສະໝັກວຽກ ແລະ ຈັດການໂປຣໄຟລ໌',
+        'Login/Registration System': 'ລະບົບລ໋ອກອິນ/ລົງທະບຽນ',
+        'Job Search': 'ການຄົ້ນຫາວຽກ',
+        'Profile Management': 'ຈັດການໂປຣໄຟລ໌',
+        'Job Application System': 'ລະບົບສະໝັກວຽກ',
+        'Full-Stack Development': 'Full-Stack Development',
+        'Online shopping website with product catalog, order management and payment system.': 'ເວັບໄຊຊື້-ຂາຍອອນລາຍ ມີລະບົບຕະກ້າສິນຄ້າ, ການຈັດການຄຳສັ່ງຊື້ ແລະ ລະບົບຊຳລະເງິນ',
+        'Payment System': 'ລະບົບຊຳລະເງິນ',
+        'Product Tracking': 'ຕິດຕາມສິນຄ້າ',
+        'Product Management System': 'ລະບົບຄວບຄຸມສິນຄ້າ',
+        'Loan Management System': 'ລະບົບປ່ອຍເງິນກູ້',
+        'Finance / Web & Mobile Development': 'Finance / Web & Mobile Development',
+        'A system for managing loan applications, borrower information, repayment schedules and payment tracking.': 'ລະບົບສໍາລັບຈັດການການຂໍກູ້ເງິນ, ຂໍ້ມູນຜູ້ກູ້, ຕາຕະລາງຈ່າຍເງິນ ແລະ ການຕິດຕາມການຊໍາລະ',
+        'Loan Application Management': 'ຈັດການຄໍາຮ້ອງຂໍກູ້ເງິນ',
+        'Borrower Records': 'ຂໍ້ມູນຜູ້ກູ້',
+        'Repayment Schedule': 'ຕາຕະລາງຈ່າຍເງິນ',
+        'Payment Tracking': 'ຕິດຕາມການຊໍາລະ',
+        'Water Billing System': 'ລະບົບໃບບິນນໍ້າປະປາ',
+        'A system for managing water billing, customer accounts, meter readings and payment records.': 
+        'ລະບົບສໍາລັບຈັດການໃບບິນນໍ້າປະປາ, ຂໍ້ມູນລູກຄ້າ, ການອ່ານມິດນໍ້າ ແລະ ການບັນທຶກການຈ່າຍເງິນ',
+        'Customer Management': 'ຈັດການຂໍ້ມູນລູກຄ້າ',
+        'Meter Reading Records': 'ບັນທຶກການອ່ານມິດນໍ້າ',
+        'Bill Generation': 'ສ້າງໃບບິນນໍ້າປະປາ',
+        'Payment Tracking': 'ຕິດຕາມການຊໍາລະ',
+        'Restaurant POS System': 'Restaurant POS System',
+        'Desktop Application': 'Desktop Application',
+        'Point of sale system for restaurants with bill calculation, product management and sales reporting.': 'ລະບົບຂາຍໜ້າຮ້ານສຳລັບຮ້ານອາຫານ ມີການຄຳນວນບິນ, ຈັດການສິນຄ້າ ແລະ ລາຍງານຍອດຂາຍ',
+        'Point of Sale System': 'ລະບົບຂາຍໜ້າຮ້ານ',
+        'Automatic Bill Calculation': 'ຄຳນວນບິນອັດຕະໂນມັດ',
+        'Sales Reports': 'ລາຍງານຍອດຂາຍ',
+        'Stock Management': 'ຈັດການສະຕ໋ອກ',
+        'School Management System': 'School Management System',
+        'Web Application': 'Web Application',
+        'School management system with grade recording, attendance and teacher-student communication.': 'ລະບົບຈັດການໂຮງຮຽນ ມີການບັນທຶກຄະແນນ, ການເຂົ້າຮຽນ ແລະ ການສື່ສານລະຫວ່າງຄູ-ນັກຮຽນ',
+        'Grade Recording': 'ບັນທຶກຄະແນນ',
+        'Attendance System': 'ລະບົບເຂົ້າຮຽນ',
+        'Class Schedule': 'ຕາຕະລາງຮຽນ',
+        'Academic Reports': 'ລາຍງານຜົນການຮຽນ',
+        'Meal and Hydration Reminder App': 'ແອັບແຈ້ງເຕືອນການກິນເຂົ້າ ແລະ ດື່ມນໍ້າ',
+        'An application that sends notifications for meal and water times and tracks daily intake of food and water (cups/glasses).': 'ແອັບພລິເຄຊັນທີ່ສົ່ງການແຈ້ງເຕືອນສຳລັບເວລາອາຫານ ແລະ ນໍ້າ ແລະ ບັນທຶກປະລິມານການກິນເຂົ້າ ແລະ ດື່ມນໍ້າປະຈຳວັນ (ຈຳນວນມື້/ຈອກ)',
+        'Mealtime Reminders': 'ແຈ້ງເຕືອນເວລາອາຫານ',
+        'Water Intake Tracking': 'ຕິດຕາມການດື່ມນໍ້າ',
+        'Daily Intake Log': 'ບັນທຶກການກິນປະຈຳວັນ',
+        'Progress Statistics': 'ສະຖິຕິຄວາມຄືບໜ້າ',
+        'Experience & Education': 'ປະສົບການ & ການສຶກສາ',
+        'Work Experience': 'ປະສົບການການເຮັດວຽກ',
+        'Internship at: Lao Telecom Phongsaly Branch': 'ຝຶກງານທີ່: ລາວໂທລະຄົມສາຂາແຂວງຜົ້ງສາລີ (Lao Telecom)',
+        'February - April 2025': 'ກຸມພາ - ເມສາ 2025',
+        'Fixed telephone-Internet and mobile transmission': 'ໂທລະສັບພື້ນຖານ-ອິນເຕີເນັດ ແລະ ສາຍສົ່ງມືຖື',
+        'Configure routers for internet connection and WiFi installation': 'ຕັ້ງຄ່າເຣົາເຕີເພື່ອຮອງຮັບການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລະ ຕິດຕັ້ງ WiFi',
+        'Install signal towers and connect fiber optic cables': 'ຕິດຕັ້ງເສົາສັນຍານ ແລະ ຕໍ່ສາຍໄຟເບີອ໋ອບຕິກ',
+        'Troubleshoot network issues and customer support': 'ແກ້ໄຂບັນຫາເຄືອຂ່າຍ ແລະ ສະໜັບສະໜູນລູກຄ້າ',
+        'Education': 'ການສຶກສາ',
+        'Soutsaka Institute of Technology': 'ສະຖາບັນ ເຕັກໂນໂລຊີ ສຸດສະກະ',
+        "Bachelor's Degree: Computer Programming": 'ປະລິນຍາຕີ: ການສ້າງໂປຣແກຣມຄອມພິວເຕີ',
+        '2025 - Present': '2025 - ປັດຈຸບັນ',
+        'BCT College for I.T Education': 'ວິທະຍາໄລ ບີຊີທີ ເພື່ອການສຶກສາດ້ານໄອທີ',
+        "Associate's Degree: Computer Science and Software Engineering": 'ຊັ້ນສູງ: ວິທະຍາສາດຄອມພິວເຕີ ແລະ ວິສະວະກຳຊ໋ອບແວ',
+        '2022 - 2025': '2022 - 2025',
+        'Phone': 'ໂທລະສັບ',
+        'Email': 'ອີເມວ',
+        'Address': 'ທີ່ຢູ່',
+        'Phakhao Village, Saysettha District, Vientiane Capital': 'ບ້ານພະຂາວ, ໄຊທານີ, ນະຄອນຫຼວງວຽງຈັນ',
+        '© 2025 Sengphet PHOMMACHAN - Full-Stack Developer': '© 2025 ແສງເພັດ ພົມມະຈັນ - Full-Stack Developer'
+      };
+
+      languageToggle.addEventListener("click", () => {
+        if (currentLanguage === "lo") {
+          currentLanguage = "en";
+          languageIcon.className = "fas fa-globe-americas";
+        } else {
+          currentLanguage = "lo";
+          languageIcon.className = "fas fa-language";
+        }
+        updateLanguage();
+        localStorage.setItem("language", currentLanguage);
+      });
+
+      // Function to update language
+      function updateLanguage() {
+        document.querySelectorAll("[data-en]").forEach((element) => {
+          const englishText = element.getAttribute("data-en");
+          if (currentLanguage === "en") {
+            element.textContent = englishText;
+          } else {
+            // Switch back to Lao
+            const laoText = laoTranslations[englishText];
+            if (laoText) {
+              element.textContent = laoText;
+            }
+          }
+        });
+      }
+
+      // Load saved language
+      const savedLanguage = localStorage.getItem("language");
+      if (savedLanguage === "en") {
+        currentLanguage = "en";
+        languageIcon.className = "fas fa-globe-americas";
+        updateLanguage();
+      }
     </script>
 </body>
 </html>
