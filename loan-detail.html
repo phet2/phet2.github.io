@@ -7,9 +7,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .card {
+            margin-top: 1.5rem;
+        }
+    </style>
 </head>
 <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo"><i class="fas fa-code"></i> SP</div>
+          <!-- <button
+            class="language-toggle"
+            id="languageToggle"
+            title="Toggle Language"
+          >
+            <i class="fas fa-language" id="languageIcon"></i>
+          </button> -->
+        </div>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <div class="mobile-menu" id="mobileMenu">
+            <span></span> <span></span> <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="container">
         <button class="back-button" onclick="goBack()">
             <i class="fas fa-arrow-left"></i> ກັບໄປໜ້າ Portfolio
@@ -207,5 +234,6 @@
             });
         });
     </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
