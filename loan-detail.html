@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ລາຍລະອຽດໂປຣເຈັກ - ລະບົບປ່ອຍເງິນກູ້</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .card {
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo"><i class="fas fa-code"></i> SP</div>
+          <!-- <button
+            class="language-toggle"
+            id="languageToggle"
+            title="Toggle Language"
+          >
+            <i class="fas fa-language" id="languageIcon"></i>
+          </button> -->
+        </div>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <div class="mobile-menu" id="mobileMenu">
+            <span></span> <span></span> <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <button class="back-button" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i> ກັບໄປໜ້າ Portfolio
+        </button>
+
+        <div class="project-header">
+            <h1 class="project-title">ລະບົບປ່ອຍເງິນກູ້</h1>
+            <p class="project-category"><i class="fas fa-money-bill-wave"></i> Financial Management System</p>
+            <p class="project-description">
+                ລະບົບຈັດການການປ່ອຍເງິນກູ້ແບບຄົບວົງຈອນ ຕັ້ງແຕ່ການຂໍກູ້ ຈົນເຖິງການຕິດຕາມການຊໍາລະ 
+                ພ້ອມລະບົບຄິດໄລ່ດອກເບ້ຍ ແລະ ລາຍງານທາງການເງິນຢ່າງເຕັມຮູບແບບ
+            </p>
+        </div>
+
+        <!-- ພາກສ່ວນສະຖິຕິ -->
+        <div class="project-stats">
+            <div class="stat-card">
+                <div class="stat-number">12+</div>
+                <div class="stat-label">ໜ້າທີ່ຫຼັກ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">ເທັກໂນໂລຊີ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">ຄຸນສົມບັດ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3 ເດືອນ</div>
+                <div class="stat-label">ເວລາພັດທະນາ</div>
+            </div>
+        </div>
+
+        <!-- ພາກສ່ວນຮູບພາບ -->
+        <div class="project-images">
+            <img src="https://via.placeholder.com/600x400/1a1a2e/10b981?text=ໜ້າລ໋ອກອິນ+ລະບົບ" alt="ໜ້າລ໋ອກອິນ" class="project-image">
+            <img src="https://via.placeholder.com/600x400/0f3460/3b82f6?text=ໜ້າຈັດການກູ້ເງິນ" alt="ໜ້າຈັດການກູ້ເງິນ" class="project-image">
+            <img src="https://via.placeholder.com/600x400/1a1a2e/10b981?text=ໜ້າຕາຕະລາງຊໍາລະ" alt="ໜ້າຕາຕະລາງຊໍາລະ" class="project-image">
+            <img src="https://via.placeholder.com/600x400/0f3460/3b82f6?text=ໜ້າລາຍງານການເງິນ" alt="ໜ້າລາຍງານການເງິນ" class="project-image">
+        </div>
+
+        <div class="project-details">
+            <div class="main-content">
+                <!-- ໂຄງສ້າງລະບົບ -->
+                <div class="card">
+                    <h3><i class="fas fa-sitemap"></i> ໂຄງສ້າງລະບົບ</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">👤 ຜູ້ໃຊ້ງານ (ຜູ້ບໍລິຫານ, ພະນັກງານ, ລູກຄ້າ)</div>
+                        <div class="tech-item">🌐 ໜ້າຈໍຜູ້ໃຊ້ (React + Tailwind CSS)</div>
+                        <div class="tech-item">⚙️ Backend API (PHP + MySQL)</div>
+                        <div class="tech-item">💾 ຖານຂໍ້ມູນ (MySQL Database)</div>
+                    </div>
+                </div>
+
+                <!-- ລາຍລະອຽດໂປຣເຈັກ -->
+                <div class="card">
+                    <h3><i class="fas fa-info-circle"></i> ລາຍລະອຽດໂປຣເຈັກ</h3>
+                    <p>
+                        ລະບົບປ່ອຍເງິນກູ້ເປັນເວັບແອັບພລິເຄຊັນທີ່ອອກແບບມາເພື່ອຈັດການກະສິກຳກູ້ຢືມເງິນຢ່າງຄົບວົງຈອນ. 
+                        ລະບົບນີ້ຊ່ວຍໃຫ້ສະຖາບັນການເງິນ ຫຼື ກຸ່ມອອກເງິນກູ້ສາມາດຈັດການຂໍ້ມູນລູກຄ້າ, 
+                        ການຂໍກູ້, ການອະນຸມັດ, ການປ່ອຍເງິນ, ແລະ ການຕິດຕາມການຊໍາລະໄດ້ຢ່າງມີປະສິດທິພາບ.
+                    </p>
+                </div>
+
+                <!-- ຄວາມສາມາດທີ່ໃຊ້ -->
+                <div class="card">
+                    <h3><i class="fas fa-list-check"></i> ເທັກໂນໂລຊີ</h3>
+                    <div class="tech-list">
+                        <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-item"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-item"><i class="fas fa-bolt"></i> jQuery</span>
+                    </div>
+                </div>
+
+                <!-- ຄຸນສົມບັດພິເສດ -->
+                <div class="card">
+                    <h3><i class="fas fa-star"></i> ຄຸນສົມບັດຫຼັກ</h3>
+                    <ul class="features-list">
+                        <li>ການຈັດການຂໍ້ມູນລູກຄ້າ: ບັນທຶກ ແລະ ຈັດການຂໍ້ມູນຜູ້ກູ້ຢືມຢ່າງຄົບຖ້ວນ</li>
+                        <li>ລະບົບຂໍກູ້ເງິນ: ຮອງຮັບການສະໝັກກູ້ເງິນຜ່ານອອນລາຍ</li>
+                        <li>ການອະນຸມັດກູ້: ໂຫຼດການອະນຸມັດຂັ້ນຕ່າງໆ ຕາມລຳດັບອຳນາດ</li>
+                        <li>ການຄິດໄລ່ດອກເບ້ຍ: ຄິດໄລ່ດອກເບ້ຍແບບຕ່າງໆ (ລວມ, ຕາມຈຳນວນທີ່ເຫຼືອ)</li>
+                        <li>ຕາຕະລາງຊໍາລະ: ສ້າງຕາຕະລາງຊໍາລະເງິນຕາມເງື່ອນໄຂກູ້</li>
+                    </ul>
+                </div>
+
+                <!-- ຄຸນສົມບັດຂັ້ນສູງ -->
+                <div class="card">
+                    <h3><i class="fas fa-crown"></i> ຄຸນສົມບັດຂັ້ນສູງ</h3>
+                    <ul class="features-list">
+                        <li>ລະບົບຄິດໄລ່ອັດຕະໂນມັດ: ຄິດໄລ່ດອກເບ້ຍ, ຄ່າປັບໄໝ ແລະ ຄ່າທຳນຽມອັດຕະໂນມັດ</li>
+                        <li>ເຊີດຂໍ້ມູນຄືນ: ຮອງຮັບການເຊີດຂໍ້ມູນຈາກ Excel ແລະ ສົ່ງອອກລາຍງານ</li>
+                        <li>ລະບົບສິດທິ: ກຳນົດສິດທິການໃຊ້ງານຕາມບົດບາດຜູ້ໃຊ້</li>
+                        <li>ການສຳຮອງຂໍ້ມູນ: ລະບົບສຳຮອງຂໍ້ມູນອັດຕະໂນມັດ</li>
+                        <li>ລະບົບການຊໍາລະຫຼາຍຮູບແບບ: ຮອງຮັບການຊໍາລະຜ່ານທະນາຄານ, ບັດ, ເງິນສົດ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <!-- ລິ້ງທີ່ກ່ຽວຂ້ອງ -->
+                <div class="card">
+                    <h3><i class="fas fa-link"></i> ລິ້ງທີ່ກ່ຽວຂ້ອງ</h3>
+                    <div class="demo-buttons">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-file-pdf"></i> ເອກະສານ
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ຂໍ້ມູນໂຄງການ -->
+                <div class="card">
+                    <h3><i class="fas fa-calendar"></i> ຂໍ້ມູນໂຄງການ</h3>
+                    <div class="project-info">
+                        <p><strong>ເລີ່ມພັດທະນາ:</strong> ພຶດສະພາ 2024</p>
+                        <p><strong>ເສັດພັດທະນາ:</strong> ກໍລະກົດ 2024</p>
+                        <p><strong>ໄລຍະເວລາ:</strong> 3 ເດືອນ</p>
+                        <p><strong>ສະຖານະ:</strong> ແລ້ວສຳເລັດ</p>
+                    </div>
+                </div>
+
+                <!-- ຜູ້ໃຊ້ງານ -->
+                <div class="card">
+                    <h3><i class="fas fa-users"></i> ຜູ້ໃຊ້ງານ</h3>
+                    <div class="user-roles">
+                        <p><strong>ຜູ້ບໍລິຫານລະບົບ</strong> - ຈັດການທຸກສ່ວນຂອງລະບົບ</p>
+                        <p><strong>ພະນັກງານກູ້ເງິນ</strong> - ຈັດການຂໍ້ມູນລູກຄ້າ ແລະ ການກູ້</p>
+                        <p><strong>ຜູ້ກູ້ເງິນ</strong> - ສະໝັກກູ້ ແລະ ຕິດຕາມການຊໍາລະ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ພາກສ່ວນ Demo -->
+        <div class="demo-section">
+            <div class="card">
+                <h3><i class="fas fa-play-circle"></i> ສາລະພາບການໃຊ້ງານ</h3>
+                <p>
+                    ຊົມເຊີຍຄວາມສາມາດຂອງລະບົບປ່ອຍເງິນກູ້ຜ່ານວິດີໂອສາທິດ ແລະ ທົດລອງໃຊ້ງານລະບົບ
+                </p>
+                <div class="demo-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-play"></i> ຊົມວິດີໂອ Demo
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="testInterestCalculation()">
+                        <i class="fas fa-calculator"></i> ທົດລອງຄິດໄລ່ດອກເບ້ຍ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+
+        // ຟັງຊັນທົດລອງຄິດໄລ່ດອກເບ້ຍ
+        function testInterestCalculation() {
+            const principal = prompt('ກະລຸນາໃສ່ຈຳນວນເງິນທີ່ຕ້ອງການກູ້:');
+            const interestRate = prompt('ໃສ່ອັດຕາດອກເບ້ຍຕໍ່ປີ (%):');
+            const period = prompt('ໃສ່ໄລຍະເວລາກູ້ (ເດືອນ):');
+            
+            if (principal && interestRate && period) {
+                const monthlyInterest = (parseFloat(principal) * parseFloat(interestRate) / 100) / 12;
+                const totalInterest = monthlyInterest * parseFloat(period);
+                const totalPayment = parseFloat(principal) + totalInterest;
+                
+                alert(`ຈຳນວນເງິນກູ້: ${principal} ກີບ\nອັດຕາດອກເບ້ຍ: ${interestRate}% ຕໍ່ປີ\nໄລຍະເວລາ: ${period} ເດືອນ\n\nດອກເບ້ຍທັງໝົດ: ${totalInterest.toFixed(2)} ກີບ\nຈຳນວນທີ່ຕ້ອງຊໍາລະທັງໝົດ: ${totalPayment.toFixed(2)} ກີບ`);
+            }
+        }
+
+        // Animation ໃຫ້ cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
