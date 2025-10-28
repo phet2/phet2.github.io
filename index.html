@@ -1,797 +1,117 @@
 <!DOCTYPE html>
-<html lang="lo">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ແສງເພັດ ພົມມະຈັນ - Portfolio</title>
-    <link rel="shortcut icon" href="assets/images/icon-web.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <nav id="navbar">
-      <div class="nav-container">
-        <div class="nav-left">
-          <div class="logo"><i class="fas fa-code"></i> SP</div>
-          <button
-            class="language-toggle"
-            id="languageToggle"
-            title="Toggle Language"
-          >
-            <i class="fas fa-language" id="languageIcon"></i>
-          </button>
-        </div>
-        <ul class="nav-links" id="navLinks">
-          <li>
-            <a href="#home"> <span data-en="Home">ໜ້າຫຼັກ</span></a>
-          </li>
-          <li>
-            <a href="#about"> <span data-en="About">ກ່ຽວກັບ</span></a>
-          </li>
-          <li>
-            <a href="#skills"> <span data-en="Skills">ທັກສະ</span></a>
-          </li>
-          <li>
-            <a href="#projects"> <span data-en="Projects">ໂປຣເຈັກ</span></a>
-          </li>
-          <li>
-            <a href="#experience">
-              <span data-en="Experience">ປະສົບການ</span></a
-            >
-          </li>
-          <li>
-            <a href="#contact"> <span data-en="Contact">ຕິດຕໍ່</span></a>
-          </li>
-        </ul>
-        <div class="nav-right">
-          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
-            <i class="fas fa-moon" id="themeIcon"></i>
-          </button>
-          <div class="mobile-menu" id="mobileMenu">
-            <span></span> <span></span> <span></span>
-          </div>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .terminal {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .terminal-header {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    .terminal-button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ff5f56;
+    }
+
+    .terminal-button:nth-child(2) {
+      background: #ffbd2e;
+    }
+
+    .terminal-button:nth-child(3) {
+      background: #27c93f;
+    }
+
+    .greeting {
+      color: #8b949e;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .error-code {
+      color: #ff7b72;
+      font-size: 72px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .message {
+      color: #c9d1d9;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #238636;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 1px solid #2ea043;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #2ea043;
+    }
+
+    @media (max-width: 600px) {
+      .error-code {
+        font-size: 56px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
       </div>
-    </nav>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <img class="profile-image" src="assets/images/logo.jpg" alt="" />
-        <h1 data-en="Sengphet PHOMMACHAN">ແສງເພັດ ພົມມະຈັນ</h1>
-        <h2 data-en="Full-Stack Developer">Full-Stack Developer</h2>
-        <div class="tech-tags">
-          <span class="tag"><i class="fab fa-php"></i> PHP</span>
-          <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
-          <span class="tag"><i class="fab fa-react"></i> React</span>
-          <span class="tag"><i class="fas fa-database"></i> MySQL</span>
-        </div>
-        <div class="cta-buttons">
-          <a href="#contact" class="btn btn-primary"
-            ><i class="fas fa-paper-plane"></i>
-            <span data-en="Contact Me">ຕິດຕໍ່ຂ້ອຍ</span></a
-          >
-          <a href="#projects" class="btn btn-secondary"
-            ><i class="fas fa-eye"></i>
-            <span data-en="View Projects">ເບິ່ງໂປຣເຈັກ</span></a
-          >
-          <a href="assets/documents/Sengphet_resume.pdf" class="btn btn-primary" download
-            ><i class="fas fa-download"></i>
-            <span data-en="Download Resume">ດາວໂຫຼດ Resume</span></a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2 class="section-title">
-        <i class="fas fa-user"></i> <span data-en="About Me">ກ່ຽວກັບຂ້ອຍ</span>
-      </h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>
-            <i class="fas fa-file-alt"></i>
-            <span data-en="Summary">ສະຫຼຸບຄວາມສາມາດ</span>
-          </h3>
-          <p
-            style="color: #d1d5db"
-            data-en="I am a creative web developer with full-stack development capabilities. I have expertise in using PHP, MySQL, HTML, CSS, JavaScript and React to create modern systems and website designs. I am passionate about providing innovative solutions and continuously learning new technologies."
-          >
-            ຂ້ອຍເປັນນັກພັດທະນາເວັບໄຊທີ່ມີຄວາມຄິດສ້າງສັນ ແລະ
-            ມີຄວາມສາມາດພື້ນຖານໃນການພັດທະນາເວັບໄຊເຕັມຮູບແບບ (Full-Stack).
-            ມີຄວາມຊ່ຽວຊານໃນການໃຊ້ PHP, MySQL, HTML, CSS, JavaScript ແລະ React
-            ເພື່ອສ້າງລະບົບ ແລະ ອອກແບບໜ້າເວັບທີ່ທັນສະໄໝ.
-            ມີຄວາມກະຕືລືລົ້ນທີ່ຈະສະໜອງວິທີແກ້ໄຂໃຫມ່ໆ ແລະ
-            ຮຽນຮູ້ເທັກໂນໂລຊີໃໝ່ຢ່າງຕໍ່ເນື່ອງ.
-          </p>
-        </div>
-        <div class="card">
-          <h3>
-            <i class="fas fa-bullseye"></i>
-            <span data-en="Career Goals">ເປົ້າໝາຍອາຊີບ</span>
-          </h3>
-          <p
-            style="color: #d1d5db"
-            data-en="Seeking opportunities to grow as a Full-Stack Developer and contribute to innovative projects. Eager to work with modern technologies and collaborate with talented teams to create impactful web solutions."
-          >
-            ຊອກຫາໂອກາດເພື່ອພັດທະນາຕົນເອງເປັນ Full-Stack Developer ແລະ
-            ປະກອບສ່ວນໃນໂຄງການສ້າງສັນ. ກະຕືລືລົ້ນທີ່ຈະເຮັດວຽກກັບເທັກໂນໂລຊີທັນສະໄໝ
-            ແລະ ຮ່ວມມືກັບທີມງານເພື່ອສ້າງວິທີແກ້ໄຂເວັບທີ່ມີຄຸນຄ່າ.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" style="background: rgba(17, 24, 39, 0.3)">
-      <h2 class="section-title">
-        <i class="fas fa-cogs"></i>
-        <span data-en="Technical Skills">ທັກສະດ້ານວິຊາການ</span>
-      </h2>
-      <div class="skills-grid">
-        <div class="card skill-card">
-          <h4><i class="fab fa-html5"></i> Front-end</h4>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-html5"></i> HTML5</span>
-            <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</span>
-            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
-            <span class="tech-item"><i class="fas fa-bolt"></i> jQuery</span>
-            <span class="tech-item"
-              ><i class="fab fa-bootstrap"></i> Bootstrap</span
-            >
-            <span class="tech-item"><i class="fab fa-microsoft"></i> WPF</span>
-            <span class="tech-item"><i class="fab fa-react"></i> React</span>
-          </div>
-        </div>
-        <div class="card skill-card">
-          <h4><i class="fas fa-server"></i> Back-end</h4>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
-            <span class="tech-item"><i class="fab fa-java"></i> Java</span>
-            <span class="tech-item"><i class="fab fa-python"></i> Python</span>
-            <span class="tech-item"><i class="fas fa-code"></i> C/C++</span>
-            <span class="tech-item"><i class="fab fa-microsoft"></i> C#</span>
-            <span class="tech-item"
-              ><i class="fas fa-desktop"></i> Visual Basic</span
-            >
-          </div>
-        </div>
-        <div class="card skill-card">
-          <h4><i class="fas fa-database"></i> Database</h4>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="tech-item"><i class="fas fa-fire"></i> Firebase</span>
-          </div>
-        </div>
-        <div class="card skill-card">
-          <h4><i class="fas fa-mobile-alt"></i> Mobile</h4>
-          <div class="tech-list">
-            <span class="tech-item"
-              ><i class="fab fa-android"></i> Android Studio</span
-            >
-            <span class="tech-item"><i class="fas fa-mobile"></i> Flutter</span>
-            <span class="tech-item"><i class="fab fa-java"></i> Java</span>
-          </div>
-        </div>
-        <div class="card skill-card">
-          <h4><i class="fas fa-tools"></i> Other</h4>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-linux"></i> Linux</span>
-            <span class="tech-item"
-              ><i class="fab fa-windows"></i> Windows Server</span
-            >
-            <span class="tech-item"><i class="fab fa-git"></i> Git</span>
-            <span class="tech-item"
-              ><i class="fas fa-file-word"></i> Microsoft Office</span
-            >
-            <span class="tech-item"><i class="fas fa-code"></i> Netbean</span>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="section-title" style="margin-top: 3rem;">
-        <i class="fas fa-group-arrows-rotate"></i>
-        <span data-en="Soft Skills">ທັກສະອ່ອນ</span>
-      </h2>
-
-      <div class="skills-grid soft-skills-grid" style="color: #d1d5db">
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-users" style="color: #60a5fa"></i>
-            <span data-en="Teamwork">ການເຮັດວຽກເປັນທີມ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Collaborating effectively with team members to achieve common goals."
-          >
-            ຮ່ວມມືກັບສະມາຊິກທີມໄດ້ດີ ແລະ ປະກອບສ່ວນບັນລຸເປົ້າໝາຍຮ່ວມກັນ
-          </p>
-        </div>
-
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-lightbulb" style="color: #a78bfa"></i>
-            <span data-en="Problem Solving">ແກ້ໄຂບັນຫາ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Analyzing problems and finding creative solutions for technical challenges."
-          >
-            ຄິດວິເຄາະ ແລະ ຫາວິທີແກ້ໄຂທີ່ສ້າງສັນສຳລັບບັນຫາດ້ານເຕັກນິກ
-          </p>
-        </div>
-
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-comments" style="color: #ec4899"></i>
-            <span data-en="Communication">ການສື່ສານ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Communicating clearly and effectively with clients and team members."
-          >
-            ສື່ສານຢ່າງຊັດເຈນກັບລູກຄ້າ ແລະ ສະມາຊິກທີມ
-          </p>
-        </div>
-
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-clock" style="color: #10b981"></i>
-            <span data-en="Time Management">ການຈັດການເວລາ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Prioritizing tasks and ensuring timely project delivery."
-          >
-            ຈັດລຳດັບຄວາມສຳຄັນຂອງວຽກ ແລະ ສົ່ງວຽກທັນເວລາ
-          </p>
-        </div>
-
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-sync-alt" style="color: #f59e0b"></i>
-            <span data-en="Adaptability">ການປັບຕົວ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Quickly learning and adapting to new technologies and project requirements."
-          >
-            ຮຽນຮູ້ໄວ ແລະ ປັບຕົວເຂົ້າກັບເຕັກໂນໂລຊີໃໝ່
-          </p>
-        </div>
-
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-eye" style="color: #ef4444"></i>
-            <span data-en="Attention to Detail">ຄວາມລະອຽດລະອໍ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Carefully reviewing code and ensuring quality assurance in development."
-          >
-            ກວດສອບໂຄ້ດຢ່າງລະມັດລະວັງ ແລະ ຮັບປະກັນຄຸນນະພາບ
-          </p>
-        </div>
-
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-brain" style="color: #3b82f6"></i>
-            <span data-en="Continuous Learning">ການຮຽນຮູ້ຕໍ່ເນື່ອງ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Eager to continuously learn new technologies and develop skills."
-          >
-            ກະຕືລືລົ້ນທີ່ຈະຮຽນຮູ້ເຕັກໂນໂລຊີໃໝ່ ແລະ ພັດທະນາທັກສະຕະຫຼອດເວລາ
-          </p>
-        </div>
-
-        <div class="card skill-card soft-skill-card">
-          <h4>
-            <i class="fas fa-palette" style="color: #f97316"></i>
-            <span data-en="Creativity">ຄວາມຄິດສ້າງສັນ</span>
-          </h4>
-          <p
-            class="soft-skill-description"
-            data-en="Thinking creatively in design and development to produce unique solutions."
-          >
-            ຄິດສ້າງສັນໃນການອອກແບບ ແລະ ພັດທະນາ
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title">
-        <i class="fas fa-project-diagram"></i>
-        <span data-en="Development Projects">ໂຄງການພັດທະນາ</span>
-      </h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3 onclick="openProject('jobhunt')" style="cursor: pointer">
-            <span data-en="Online Job Search System">ລະບົບຫາວຽກອອນລາຍ</span>
-          </h3>
-          <p class="card-category">
-            <i class="fas fa-globe"></i>
-            <span data-en="Full-Stack Web Development"
-              >Full-Stack Web Development</span
-            >
-          </p>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
-            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
-            <span class="tech-item"
-              ><i class="fas fa-wind"></i> Tailwind CSS</span
-            >
-          </div>
-          <p
-            style="color: #d1d5db; margin: 1rem 0"
-            data-en="A full-featured web system for connecting employers with job seekers, featuring search, job application and profile management."
-          >
-            ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບເຊື່ອມຕໍ່ຜູ້ປະກອບການກັບຜູ້ສະໝັກວຽກ
-            ມີການຄົ້ນຫາ, ສະໝັກວຽກ ແລະ ຈັດການໂປຣໄຟລ໌
-          </p>
-          <ul class="features-list">
-            <li>
-              <i class="fas fa-sign-in-alt"></i>
-              <span data-en="Login/Registration System"
-                >ລະບົບລ໋ອກອິນ/ລົງທະບຽນ</span
-              >
-            </li>
-            <li>
-              <i class="fas fa-search"></i>
-              <span data-en="Job Search">ການຄົ້ນຫາວຽກ</span>
-            </li>
-            <li>
-              <i class="fas fa-user-circle"></i>
-              <span data-en="Profile Management">ຈັດການໂປຣໄຟລ໌</span>
-            </li>
-            <li>
-              <i class="fas fa-file-alt"></i>
-              <span data-en="Job Application System">ລະບົບສະໝັກວຽກ</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>E-Commerce Platform</h3>
-          <p class="card-category">
-            <i class="fas fa-shopping-bag"></i>
-            <span data-en="Full-Stack Development">Full-Stack Development</span>
-          </p>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
-            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
-            <span class="tech-item"
-              ><i class="fas fa-wind"></i> Tailwind CSS</span
-            >
-          </div>
-          <p
-            style="color: #d1d5db; margin: 1rem 0"
-            data-en="Online shopping website with product catalog, order management and payment system."
-          >
-            ເວັບໄຊຊື້-ຂາຍອອນລາຍ ມີລະບົບຕະກ້າສິນຄ້າ, ການຈັດການຄຳສັ່ງຊື້ ແລະ
-            ລະບົບຊຳລະເງິນ
-          </p>
-          <ul class="features-list">
-            <li><i class="fas fa-shopping-cart"></i> Shopping Cart</li>
-            <li>
-              <i class="fas fa-credit-card"></i>
-              <span data-en="Payment System">ລະບົບຊຳລະເງິນ</span>
-            </li>
-            <li>
-              <i class="fas fa-box"></i>
-              <span data-en="Product Tracking">ຕິດຕາມສິນຄ້າ</span>
-            </li>
-            <li>
-              <i class="fas fa-cubes"></i>
-              <span data-en="Product Management System">ລະບົບຄວບຄຸມສິນຄ້າ</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3 onclick="openProject('loan')" style="cursor: pointer">
-            <span data-en="Loan Management System">ລະບົບປ່ອຍເງິນກູ້</span>
-          </h3>
-          <p class="card-category">
-            <i class="fas fa-money-bill-wave"></i>
-            <span data-en="Full-Stack Development">Full-Stack Development</span>
-          </p>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
-            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="tech-item"><i class="fab fa-html5"></i> HTML</span>
-            <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS</span>
-          </div>
-          <p
-            style="color: #d1d5db; margin: 1rem 0"
-            data-en="A system for managing loan applications, borrower information, repayment schedules and payment tracking."
-          >
-            ລະບົບສໍາລັບຈັດການການຂໍກູ້ເງິນ, ຂໍ້ມູນຜູ້ກູ້, ຕາຕະລາງຈ່າຍເງິນ ແລະ
-            ການຕິດຕາມການຊໍາລະ
-          </p>
-          <ul class="features-list">
-            <li>
-              <i class="fas fa-file-contract"></i>
-              <span data-en="Loan Application Management"
-                >ຈັດການຄໍາຮ້ອງຂໍກູ້ເງິນ</span
-              >
-            </li>
-            <li>
-              <i class="fas fa-users"></i>
-              <span data-en="Borrower Records">ຂໍ້ມູນຜູ້ກູ້</span>
-            </li>
-            <li>
-              <i class="fas fa-calendar-alt"></i>
-              <span data-en="Repayment Schedule">ຕາຕະລາງຈ່າຍເງິນ</span>
-            </li>
-            <li>
-              <i class="fas fa-chart-line"></i>
-              <span data-en="Payment Tracking">ຕິດຕາມການຊໍາລະ</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>
-            <span data-en="Water Billing System">ລະບົບໃບບິນນໍ້າປະປາ</span>
-          </h3>
-          <p class="card-category">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <span data-en="Full-Stack Development">Full-Stack Development</span>
-          </p>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
-            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="tech-item"
-              ><i class="fas fa-wind"></i> Tailwind CSS</span
-            >
-            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
-          </div>
-          <p
-            style="color: #d1d5db; margin: 1rem 0"
-            data-en="A system for managing water billing, customer accounts, meter readings and payment records."
-          >
-            ລະບົບສໍາລັບຈັດການໃບບິນນໍ້າປະປາ, ຂໍ້ມູນລູກຄ້າ, ການອ່ານມິດນໍ້າ ແລະ
-            ການບັນທຶກການຈ່າຍເງິນ
-          </p>
-          <ul class="features-list">
-            <li>
-              <i class="fas fa-users"></i>
-              <span data-en="Customer Management">ຈັດການຂໍ້ມູນລູກຄ້າ</span>
-            </li>
-            <li>
-              <i class="fas fa-tachometer-alt"></i>
-              <span data-en="Meter Reading Records">ບັນທຶກການອ່ານມິດນໍ້າ</span>
-            </li>
-            <li>
-              <i class="fas fa-file-invoice"></i>
-              <span data-en="Bill Generation">ສ້າງໃບບິນນໍ້າປະປາ</span>
-            </li>
-            <li>
-              <i class="fas fa-money-check"></i>
-              <span data-en="Payment Tracking">ຕິດຕາມການຊໍາລະ</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>
-            <span data-en="POS System">POS System</span>
-          </h3>
-          <p class="card-category">
-            <i class="fas fa-desktop"></i>
-            <span data-en="Desktop Application">Desktop Application</span>
-          </p>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-java"></i> Java</span>
-            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="tech-item"><i class="fab fa-microsoft"></i> C#</span>
-            <span class="tech-item"><i class="fab fa-windows"></i> WPF</span>
-          </div>
-          <p
-            style="color: #d1d5db; margin: 1rem 0"
-            data-en="Point of sale system for Store with bill calculation, product management and sales reporting."
-          >
-            ລະບົບຂາຍໜ້າຮ້ານສຳລັບຮ້ານຄ້າ ມີການຄຳນວນບິນ, ຈັດການສິນຄ້າ ແລະ
-            ລາຍງານຍອດຂາຍ
-          </p>
-          <ul class="features-list">
-            <li>
-              <i class="fas fa-cash-register"></i>
-              <span data-en="Point of Sale System">ລະບົບຂາຍໜ້າຮ້ານ</span>
-            </li>
-            <li>
-              <i class="fas fa-calculator"></i>
-              <span data-en="Automatic Bill Calculation"
-                >ຄຳນວນບິນອັດຕະໂນມັດ</span
-              >
-            </li>
-            <li>
-              <i class="fas fa-chart-bar"></i>
-              <span data-en="Sales Reports">ລາຍງານຍອດຂາຍ</span>
-            </li>
-            <li>
-              <i class="fas fa-boxes"></i>
-              <span data-en="Stock Management">ຈັດການສະຕ໋ອກ</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>
-            <span data-en="School Management System"
-              >School Management System</span
-            >
-          </h3>
-          <p class="card-category">
-            <i class="fas fa-school"></i>
-            <span data-en="Web Application">Web Application</span>
-          </p>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
-            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
-            <span class="tech-item"
-              ><i class="fas fa-wind"></i> Tailwind CSS</span
-            >
-          </div>
-          <p
-            style="color: #d1d5db; margin: 1rem 0"
-            data-en="School management system with grade recording, attendance and teacher-student communication."
-          >
-            ລະບົບຈັດການໂຮງຮຽນ ມີການບັນທຶກຄະແນນ, ການເຂົ້າຮຽນ ແລະ
-            ການສື່ສານລະຫວ່າງຄູ-ນັກຮຽນ
-          </p>
-          <ul class="features-list">
-            <li>
-              <i class="fas fa-chart-line"></i>
-              <span data-en="Grade Recording">ບັນທຶກຄະແນນ</span>
-            </li>
-            <li>
-              <i class="fas fa-user-check"></i>
-              <span data-en="Attendance System">ລະບົບເຂົ້າຮຽນ</span>
-            </li>
-            <li>
-              <i class="fas fa-calendar"></i>
-              <span data-en="Class Schedule">ຕາຕະລາງຮຽນ</span>
-            </li>
-            <li>
-              <i class="fas fa-file-alt"></i>
-              <span data-en="Academic Reports">ລາຍງານຜົນການຮຽນ</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>
-            <span data-en="Meal and Hydration Reminder App"
-              >ແອັບແຈ້ງເຕືອນການກິນເຂົ້າ ແລະ ດື່ມນໍ້າ</span
-            >
-          </h3>
-          <p class="card-category">
-            <i class="fas fa-mobile-alt"></i>
-            <span data-en="Mobile Development">Mobile Development</span>
-          </p>
-          <div class="tech-list">
-            <span class="tech-item"><i class="fas fa-mobile"></i> Flutter</span>
-            <span class="tech-item"><i class="fas fa-code"></i> Dart</span>
-            <span class="tech-item"
-              ><i class="fas fa-database"></i> SQLite</span
-            >
-          </div>
-          <p
-            style="color: #d1d5db; margin: 1rem 0"
-            data-en="An application that sends notifications for meal and water times and tracks daily intake of food and water (cups/glasses)."
-          >
-            ແອັບພລິເຄຊັນທີ່ສົ່ງການແຈ້ງເຕືອນສຳລັບເວລາອາຫານ ແລະ ນໍ້າ ແລະ
-            ບັນທຶກປະລິມານການກິນເຂົ້າ ແລະ ດື່ມນໍ້າປະຈຳວັນ (ຈຳນວນມື້/ຈອກ).
-          </p>
-          <ul class="features-list">
-            <li>
-              <i class="fas fa-bell"></i>
-              <span data-en="Mealtime Reminders">ແຈ້ງເຕືອນເວລາອາຫານ</span>
-            </li>
-            <li>
-              <i class="fas fa-tint"></i>
-              <span data-en="Water Intake Tracking">ຕິດຕາມການດື່ມນໍ້າ</span>
-            </li>
-            <li>
-              <i class="fas fa-clipboard-list"></i>
-              <span data-en="Daily Intake Log">ບັນທຶກການກິນປະຈຳວັນ</span>
-            </li>
-            <li>
-              <i class="fas fa-chart-pie"></i>
-              <span data-en="Progress Statistics">ສະຖິຕິຄວາມຄືບໜ້າ</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" style="background: rgba(17, 24, 39, 0.3)">
-      <h2 class="section-title">
-        <i class="fas fa-briefcase"></i>
-        <span data-en="Experience & Education">ປະສົບການ & ການສຶກສາ</span>
-      </h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3 style="color: #60a5fa">
-            <i class="fas fa-briefcase"></i>
-            <span data-en="Work Experience">ປະສົບການການເຮັດວຽກ</span>
-          </h3>
-          <h4 style="color: #a78bfa; margin: 1rem 0">
-            <span data-en="Internship at: Lao Telecom Phongsaly Branch"
-              >ຝຶກງານທີ່: ລາວໂທລະຄົມສາຂາແຂວງຜົ້ງສາລີ (Lao Telecom)</span
-            >
-          </h4>
-          <p style="color: #9ca3af; margin-bottom: 1rem">
-            <span data-en="February - April 2025">ກຸມພາ - ເມສາ 2025</span>
-          </p>
-          <p style="color: #d1d5db; margin-bottom: 1rem">
-            <span data-en="Fixed telephone-Internet and mobile transmission"
-              >ໂທລະສັບພື້ນຖານ-ອິນເຕີເນັດ ແລະ ສາຍສົ່ງມືຖື</span
-            >
-          </p>
-          <ul class="features-list">
-            <li>
-              <span
-                data-en="Configure routers for internet connection and WiFi installation"
-                >ຕັ້ງຄ່າເຣົາເຕີເພື່ອຮອງຮັບການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລະ ຕິດຕັ້ງ
-                WiFi</span
-              >
-            </li>
-            <li>
-              <span
-                data-en="Install signal towers and connect fiber optic cables"
-                >ຕິດຕັ້ງເສົາສັນຍານ ແລະ ຕໍ່ສາຍໄຟເບີອ໋ອບຕິກ</span
-              >
-            </li>
-            <li>
-              <span data-en="Troubleshoot network issues and customer support"
-                >ແກ້ໄຂບັນຫາເຄືອຂ່າຍ ແລະ ສະໜັບສະໜູນລູກຄ້າ</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3 style="color: #a78bfa">
-            <i class="fas fa-graduation-cap"></i>
-            <span data-en="Education">ການສຶກສາ</span>
-          </h3>
-          <div style="margin-bottom: 1.5rem">
-            <h4 style="color: #60a5fa; margin-bottom: 0.5rem">
-              <span data-en="Soutsaka Institute of Technology"
-                >ສະຖາບັນ ເຕັກໂນໂລຊີ ສຸດສະກະ</span
-              >
-            </h4>
-            <p style="color: #d1d5db">
-              <span data-en="Bachelor's Degree: Computer Programming"
-                >ປະລິນຍາຕີ: ການສ້າງໂປຣແກຣມຄອມພິວເຕີ</span
-              >
-            </p>
-            <p style="color: #9ca3af">
-              <span data-en="2025 - Present">2025 - ປັດຈຸບັນ</span>
-            </p>
-          </div>
-          <div>
-            <h4 style="color: #60a5fa; margin-bottom: 0.5rem">
-              <span data-en="BCT College for I.T Education"
-                >ວິທະຍາໄລ ບີຊີທີ ເພື່ອການສຶກສາດ້ານໄອທີ</span
-              >
-            </h4>
-            <p style="color: #d1d5db">
-              <span
-                data-en="Associate's Degree: Computer Science and Software Engineering"
-                >ຊັ້ນສູງ: ວິທະຍາສາດຄອມພິວເຕີ ແລະ ວິສະວະກຳຊ໋ອບແວ</span
-              >
-            </p>
-            <p style="color: #9ca3af">
-              <span data-en="2022 - 2025">2022 - 2025</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2 class="section-title">
-        <i class="fas fa-envelope"></i>
-        <span data-en="Contact Me">ຕິດຕໍ່ຂ້ອຍ</span>
-      </h2>
-      <div class="contact-grid">
-        <a
-          href="tel:+8562092468130"
-          class="card contact-card"
-          style="text-decoration: none; color: inherit"
-        >
-          <svg
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            style="color: #60a5fa"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-            />
-          </svg>
-          <h3 data-en="Phone">ໂທລະສັບ</h3>
-          <p style="color: #d1d5db">+856 20 9246 8130</p>
-        </a>
-
-        <a
-          href="mailto:sengphet8130@gmail.com"
-          class="card contact-card"
-          style="text-decoration: none; color: inherit"
-        >
-          <svg
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            style="color: #a78bfa"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
-          <h3 data-en="Email">ອີເມວ</h3>
-          <p style="color: #d1d5db">sengphet8130@gmail.com</p>
-        </a>
-
-        <div class="card contact-card">
-          <svg
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            style="color: #ec4899"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            />
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-          </svg>
-          <h3 data-en="Address">ທີ່ຢູ່</h3>
-          <p
-            style="color: #d1d5db"
-            data-en="Phakhao Village, Saysettha District, Vientiane Capital"
-          >
-            ບ້ານພະຂາວ, ໄຊທານີ, ນະຄອນຫຼວງວຽງຈັນ
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>
-        <i class="far fa-copyright"></i>
-        <span data-en="2025 Sengphet PHOMMACHAN - Full-Stack Developer"
-          >2025 ແສງເພັດ ພົມມະຈັນ - Full-Stack Developer</span
-        >
-      </p>
-    </footer>
-    <script src="assets/js/script.js"></script>
-  </body>
+      <div class="greeting">Hello World</div>
+      <div class="error-code">404</div>
+      <div class="message">No Pages.</div>
+      <a href="/" class="btn">Reload</a>
+    </div>
+  </div>
+</body>
 </html>
