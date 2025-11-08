@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ແສງເພັດ ພົມມະຈັນ - Portfolio</title>
-    <link rel="shortcut icon" href="assets/images/icon-web.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon-web.png"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap"
@@ -81,7 +85,10 @@
             ><i class="fas fa-eye"></i>
             <span data-en="View Projects">ເບິ່ງໂປຣເຈັກ</span></a
           >
-          <a href="assets/documents/Sengphet_resume.pdf" class="btn btn-primary" download
+          <a
+            href="assets/documents/Sengphet_resume.pdf"
+            class="btn btn-primary"
+            download
             ><i class="fas fa-download"></i>
             <span data-en="Download Resume">ດາວໂຫຼດ Resume</span></a
           >
@@ -194,7 +201,7 @@
         </div>
       </div>
 
-      <h2 class="section-title" style="margin-top: 3rem;">
+      <h2 class="section-title" style="margin-top: 3rem">
         <i class="fas fa-group-arrows-rotate"></i>
         <span data-en="Soft Skills">ທັກສະອ່ອນ</span>
       </h2>
@@ -571,6 +578,97 @@
           </ul>
         </div>
 
+        <!-- ລະບົບບໍລິຫານອາພາດເມັນ -->
+        <div class="card">
+          <h3 onclick="openProject('apartment')" style="cursor: pointer">
+            <span data-en="Apartment Management System"
+              >ລະບົບບໍລິຫານອາພາດເມັນ</span
+            >
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-building"></i>
+            <span data-en="Full-Stack Development">Full-Stack Development</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="A comprehensive system for managing apartment rentals, tenant information, lease agreements and maintenance requests."
+          >
+            ລະບົບສໍາລັບຈັດການການເຊົ່າອາພາດເມັນ, ຂໍ້ມູນຜູ້ເຊົ່າ, ສັນຍາເຊົ່າ ແລະ
+            ການຮ້ອງຂໍການບໍາລຸງຮັກສາ
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-user-friends"></i>
+              <span data-en="Tenant Management">ງັດການຂໍ້ມູນຜູ້ເຊົ່າ</span>
+            </li>
+            <li>
+              <i class="fas fa-file-contract"></i>
+              <span data-en="Lease Agreements">ຈັດການສັນຍາເຊົ່າ</span>
+            </li>
+            <li>
+              <i class="fas fa-money-bill-wave"></i>
+              <span data-en="Rent Collection">ເກັບຄ່າເຊົ່າ</span>
+            </li>
+            <li>
+              <i class="fas fa-tools"></i>
+              <span data-en="Maintenance Tracking">ຕິດຕາມການບໍາລຸງຮັກສາ</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ລະບົບຂາຍວັດສະດຸກໍ່ສ້າງ -->
+        <div class="card">
+          <h3 onclick="openProject('construction')" style="cursor: pointer">
+            <span data-en="Construction Materials Sales System"
+              >ລະບົບຂາຍວັດສະດຸກໍ່ສ້າງ</span
+            >
+          </h3>
+          <p class="card-category">
+            <i class="fas fa-hard-hat"></i>
+            <span data-en="Full-Stack Development">Full-Stack Development</span>
+          </p>
+          <div class="tech-list">
+            <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-item"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+          <p
+            style="color: #d1d5db; margin: 1rem 0"
+            data-en="A specialized system for managing construction materials sales, inventory tracking, supplier management and delivery scheduling."
+          >
+            ລະບົບສະເພາະສໍາລັບຈັດການການຂາຍວັດສະດຸກໍ່ສ້າງ, ຕິດຕາມສາງ,
+            ຈັດການຜູ້ສະໜອງ ແລະ ກໍານົດການຈັດສົ່ງ
+          </p>
+          <ul class="features-list">
+            <li>
+              <i class="fas fa-cubes"></i>
+              <span data-en="Materials Inventory">ຄຸ້ມຄອງສາງວັດສະດຸ</span>
+            </li>
+            <li>
+              <i class="fas fa-truck"></i>
+              <span data-en="Delivery Management">ຈັດການການຂົນສົ່ງ</span>
+            </li>
+            <li>
+              <i class="fas fa-file-invoice-dollar"></i>
+              <span data-en="Quotation & Invoicing">ໃບສະເໜີລາຄາ ແລະ ໃບບິນ</span>
+            </li>
+            <li>
+              <i class="fas fa-handshake"></i>
+              <span data-en="Supplier Management">ຈັດການຜູ້ສະໜອງ</span>
+            </li>
+          </ul>
+        </div>
         <div class="card">
           <h3>
             <span data-en="Meal and Hydration Reminder App"

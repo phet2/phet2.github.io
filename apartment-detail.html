@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ລາຍລະອຽດໂປຣເຈັກ - ລະບົບບໍລິຫານອາພາດເມັນ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .card {
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo"><i class="fas fa-code"></i> SP</div>
+        </div>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <div class="mobile-menu" id="mobileMenu">
+            <span></span> <span></span> <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <button class="back-button" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i> ກັບໄປໜ້າ Portfolio
+        </button>
+
+        <div class="project-header">
+            <h1 class="project-title">ລະບົບບໍລິຫານອາພາດເມັນ</h1>
+            <p class="project-category"><i class="fas fa-building"></i> Full-Stack Web Development</p>
+            <p style="color: #d1d5db; max-width: 600px; margin: 0 auto;">
+                ລະບົບເວັບໄຊເຕັມຮູບແບບສຳລັບຄຸ້ມຄອງການເຊົ່າອາພາດເມັນ, ຈັດການຂໍ້ມູນຜູ້ເຊົ່າ, 
+                ສັນຍາເຊົ່າ ແລະ ການບໍາລຸງຮັກສາຢ່າງມີປະສິດທິພາບ
+            </p>
+        </div>
+
+        <!-- ພາກສ່ວນສະຖິຕິ -->
+        <div class="project-stats">
+            <div class="stat-card">
+                <div class="stat-number">12+</div>
+                <div class="stat-label">ໜ້າທີ່ພັດທະນາ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">ເທັກໂນໂລຊີຫຼັກ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10</div>
+                <div class="stat-label">ຄຸນສົມບັດພິເສດ</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3 ເດືອນ</div>
+                <div class="stat-label">ເວລາພັດທະນາ</div>
+            </div>
+        </div>
+
+        <!-- ພາກສ່ວນຮູບພາບ -->
+        <div class="project-images">
+            <img 
+                src="assets/images/apartment-dashboard.png?text=ໜ້າແດັດບອດ" 
+                alt="ໜ້າແດັດບອດ" 
+                class="project-image"
+            >
+            <img 
+                src="assets/images/apartment-tenants.png?text=ຈັດການຜູ້ເຊົ່າ" 
+                alt="ໜ້າຈັດການຜູ້ເຊົ່າ" 
+                class="project-image"
+            >
+            <img 
+                src="assets/images/apartment-rooms.png?text=ຈັດການຫ້ອງ" 
+                alt="ໜ້າຈັດການຫ້ອງ" 
+                class="project-image"
+            >
+            <img 
+                src="assets/images/apartment-payment.png?text=ລະບົບຊຳລະເງິນ" 
+                alt="ໜ້າລະບົບຊຳລະເງິນ" 
+                class="project-image"
+            >
+        </div>
+
+        <div class="project-details">
+            <div class="main-content">
+                <!-- ລາຍລະອຽດໂປຣເຈັກ -->
+                <div class="card">
+                    <h3><i class="fas fa-info-circle"></i> ລາຍລະອຽດໂປຣເຈັກ</h3>
+                    <p style="color: #d1d5db; line-height: 1.8;">
+                        ລະບົບບໍລິຫານອາພາດເມັນເປັນເວັບໄຊທີ່ພັດທະນາຂຶ້ນເພື່ອແກ້ໄຂບັນຫາການຄຸ້ມຄອງອາຄານເຊົ່າໃນຍຸກດິຈິຕອນ. 
+                        ລະບົບນີ້ອະນຸຍາດໃຫ້ຜູ້ຄຸ້ມຄອງອາຄານສາມາດຕິດຕາມຂໍ້ມູນຜູ້ເຊົ່າ, ຄຸ້ມຄອງສັນຍາເຊົ່າ, ເກັບຄ່າເຊົ່າ, 
+                        ແລະ ຈັດການການບໍາລຸງຮັກສາໄດ້ຢ່າງເປັນລະບົບ ແລະ ມີປະສິດທິພາບ. ລະບົບຍັງມີການສ້າງລາຍງານ ແລະ 
+                        ການແຈ້ງເຕືອນອັດຕະໂນມັດສຳລັບການຄຸ້ມຄອງທີ່ດີຂຶ້ນ.
+                    </p>
+                </div>
+
+                <!-- ຄວາມສາມາດທີ່ໃຊ້ -->
+                <div class="card">
+                    <h3><i class="fas fa-list-check"></i> ຄວາມສາມາດທີ່ໃຊ້</h3>
+                    <div class="tech-list">
+                        <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-item"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-item"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                        <span class="tech-item"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-item"><i class="fas fa-bolt"></i> jQuery</span>
+                        <span class="tech-item"><i class="fas fa-chart-bar"></i> Chart.js</span>
+                    </div>
+                </div>
+
+                <!-- ຄຸນສົມບັດພິເສດ -->
+                <div class="card">
+                    <h3><i class="fas fa-star"></i> ຄຸນສົມບັດພິເສດ</h3>
+                    <ul class="features-list">
+                        <li><strong>ລະບົບຈັດການຜູ້ເຊົ່າ:</strong> ບັນທຶກຂໍ້ມູນຜູ້ເຊົ່າ, ປະຫວັດການເຊົ່າ, ເອກະສານກ່ຽວຂ້ອງ</li>
+                        <li><strong>ຄຸ້ມຄອງຫ້ອງເຊົ່າ:</strong> ຕິດຕາມສະຖານະຫ້ອງ (ຫວ່າງ, ເຊົ່າແລ້ວ, ບໍາລຸງຮັກສາ)</li>
+                        <li><strong>ລະບົບສັນຍາເຊົ່າ:</strong> ສ້າງ, ແກ້ໄຂ ແລະ ຕໍ່ສັນຍາເຊົ່າອັດຕະໂນມັດ</li>
+                        <li><strong>ການເກັບຄ່າເຊົ່າ:</strong> ບັນທຶກການຊຳລະ, ສ້າງໃບບິນ, ຕິດຕາມໜີ້ຄ້າງ</li>
+                        <li><strong>ລະບົບບໍາລຸງຮັກສາ:</strong> ຮັບແຈ້ງບັນຫາ, ມອບໝາຍຊ່າງ, ຕິດຕາມສະຖານະ</li>
+                        <li><strong>ການແຈ້ງເຕືອນ:</strong> ແຈ້ງກ່ອນສັນຍາໝົດອາຍຸ, ຄ່າເຊົ່າຄ້າງ, ການບໍາລຸງຮັກສາ</li>
+                        <li><strong>ລາຍງານ Dashboard:</strong> ສະແດງສະຖິຕິລາຍຮັບ-ລາຍຈ່າຍ, ອັດຕາການເຊົ່າ</li>
+                        <li><strong>ການຄຸ້ມຄອງເງິນມັດຈຳ:</strong> ບັນທຶກ ແລະ ຕິດຕາມເງິນມັດຈຳຜູ້ເຊົ່າ</li>
+                        <li><strong>ພິມໃບບິນ/ໃບເສັດ:</strong> ສ້າງ ແລະ ພິມເອກະສານຕ່າງໆ ອັດຕະໂນມັດ</li>
+                        <li><strong>ລະບົບຜູ້ໃຊ້ຫຼາຍລະດັບ:</strong> Admin, Manager, Staff ມີສິດໃນການເຂົ້າເຖິງແຕກຕ່າງກັນ</li>
+                    </ul>
+                </div>
+
+                <!-- ຄວາມທ້າທາຍ ແລະ ວິທີແກ້ໄຂ -->
+                <div class="card">
+                    <h3><i class="fas fa-puzzle-piece"></i> ຄວາມທ້າທາຍ ແລະ ວິທີແກ້ໄຂ</h3>
+                    <ul class="features-list">
+                        <li><strong>ຄວາມຊັບຊ້ອນຂອງການຄຸ້ມຄອງ:</strong> ອອກແບບ workflow ທີ່ງ່າຍ ແລະ ເຂົ້າໃຈງ່າຍ</li>
+                        <li><strong>ການຄິດໄລ່ຄ່າເຊົ່າອັດຕະໂນມັດ:</strong> ພັດທະນາລະບົບຄິດໄລ່ທີ່ຍືດຫຍຸ່ນ ແລະ ຖືກຕ້ອງ</li>
+                        <li><strong>ການເກັບຮັກສາເອກະສານ:</strong> ໃຊ້ລະບົບອັບໂຫຼດ ແລະ ເກັບໄຟລ໌ທີ່ປອດໄພ</li>
+                        <li><strong>ການສ້າງລາຍງານ:</strong> ພັດທະນາລາຍງານທີ່ຫຼາກຫຼາຍ ແລະ ເຂົ້າໃຈງ່າຍດ້ວຍກຣາຟ</li>
+                        <li><strong>ການແຈ້ງເຕືອນທັນເວລາ:</strong> ສ້າງລະບົບແຈ້ງເຕືອນອັດຕະໂນມັດແບບ Real-time</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <!-- ເທັກໂນໂລຊີ -->
+                <div class="card">
+                    <h3><i class="fas fa-tools"></i> ເທັກໂນໂລຊີ</h3>
+                    <div style="color: #d1d5db;">
+                        <p><strong>Backend:</strong> PHP, MySQL</p>
+                        <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript</p>
+                        <p><strong>Framework:</strong> Tailwind CSS, jQuery</p>
+                        <p><strong>Charts:</strong> Chart.js</p>
+                        <p><strong>Database:</strong> MySQL</p>
+                        <p><strong>Version Control:</strong> Git</p>
+                    </div>
+                </div>
+
+                <!-- ລິ້ງທີ່ກ່ຽວຂ້ອງ -->
+                <div class="card">
+                    <h3><i class="fas fa-link"></i> ລິ້ງທີ່ກ່ຽວຂ້ອງ</h3>
+                    <div class="demo-buttons" style="flex-direction: column;">
+                        <a href="https://apartment.great-site.net/" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <!-- <a href="#" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a> -->
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-file-pdf"></i> ເອກະສານໂປຣເຈັກ
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ຂໍ້ມູນໂຄງການ -->
+                <div class="card">
+                    <h3><i class="fas fa-calendar"></i> ຂໍ້ມູນໂຄງການ</h3>
+                    <div style="color: #d1d5db;">
+                        <p><strong>ເລີ່ມພັດທະນາ:</strong> ເມສາ 2024</p>
+                        <p><strong>ເສັດພັດທະນາ:</strong> ກໍລະກົດ 2024</p>
+                        <p><strong>ໄລຍະເວລາ:</strong> 3 ເດືອນ</p>
+                        <p><strong>ສະຖານະ:</strong> ແລ້ວສຳເລັດ</p>
+                    </div>
+                </div>
+
+                <!-- ບົດບາດໃນໂຄງການ -->
+                <div class="card">
+                    <h3><i class="fas fa-user-tie"></i> ບົດບາດໃນໂຄງການ</h3>
+                    <div style="color: #d1d5db;">
+                        <p>Full-Stack Developer</p>
+                        <ul class="features-list" style="margin-top: 1rem;">
+                            <li>ອອກແບບຖານຂໍ້ມູນ</li>
+                            <li>ພັດທະນາ Backend API</li>
+                            <li>ອອກແບບ UI/UX</li>
+                            <li>ພັດທະນາ Frontend</li>
+                            <li>ທົດສອບລະບົບ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ພາກສ່ວນ Demo -->
+        <div class="demo-section">
+            <div class="card">
+                <h3><i class="fas fa-play-circle"></i> ສາທິດການໃຊ້ງານ</h3>
+                <p style="color: #d1d5db; margin-bottom: 1.5rem;">
+                    ຊົມເຊີຍຄວາມສາມາດຂອງລະບົບຜ່ານວິດີໂອສາທິດ ແລະ ທົດລອງໃຊ້ງານລະບົບ
+                </p>
+                <div class="demo-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-play"></i> ຊົມວິດີໂອ Demo
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-hand-pointer"></i> ທົດລອງໃຊ້ງານ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
