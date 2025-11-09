@@ -220,7 +220,20 @@ const laoTranslations = {
   "Mealtime Reminders": "ແຈ້ງເຕືອນເວລາອາຫານ",
   "Water Intake Tracking": "ຕິດຕາມການດື່ມນໍ້າ",
   "Daily Intake Log": "ບັນທຶກການກິນປະຈຳວັນ",
-  "Progress Statistics": "ສະຖິຕິຄວາມຄືບໜ້າ"
+  "Progress Statistics": "ສະຖິຕິຄວາມຄືບໜ້າ",
+  "Apartment Management System": "ລະບົບບໍລິຫານອາພາດເມັນ",
+  "Full-Stack Development": "Full-Stack Development",
+  "A comprehensive system for managing apartment rentals, tenant information, lease agreements and maintenance requests.": "ລະບົບສໍາລັບຈັດການການເຊົ່າອາພາດເມັນ, ຂໍ້ມູນຜູ້ເຊົ່າ, ສັນຍາເຊົ່າ ແລະ ການຮ້ອງຂໍການບໍາລຸງຮັກສາ",
+  "Tenant Management": "ຈັດການຂໍ້ມູນຜູ້ເຊົ່າ",
+  "Lease Agreements": "ຈັດການສັນຍາເຊົ່າ",
+  "Rent Collection": "ເກັບຄ່າເຊົ່າ",
+  "Maintenance Tracking": "ຕິດຕາມການບໍາລຸງຮັກສາ",
+  "Construction Materials Sales System": "ລະບົບຂາຍວັດສະດຸກໍ່ສ້າງ",
+  "A specialized system for managing construction materials sales, inventory tracking, supplier management and delivery scheduling.": "ລະບົບສະເພາະສໍາລັບຈັດການການຂາຍວັດສະດຸກໍ່ສ້າງ, ຕິດຕາມສາງ, ຈັດການຜູ້ສະໜອງ ແລະ ກໍານົດການຈັດສົ່ງ",
+  "Materials Inventory": "ຄຸ້ມຄອງສາງວັດສະດຸ",
+  "Delivery Management": "ຈັດການການຂົນສົ່ງ",
+  "Quotation & Invoicing": "ໃບສະເໜີລາຄາ ແລະ ໃບບິນ",
+  "Supplier Management": "ຈັດການຜູ້ສະໜອງ"
 };
 
 languageToggle.addEventListener("click", () => {
